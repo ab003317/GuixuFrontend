@@ -2,6 +2,10 @@
 
 /* 类脑/旅程梦星作品，禁止二传，禁止商业化，均无偿免费开源分享 (V13 - Final Fix) */
 
+
+html, body { height: auto; min-height: 100%; }
+body { margin: 0; }
+
 :root {
   --color-primary: #c9aa71;
   --color-primary-hover: #daa520;
@@ -13,21 +17,6 @@
   --color-border: rgba(201, 170, 113, 0.5);
   --bg-overlay-color: rgba(0, 0, 0, 0.5);
   --bg-backdrop-filter: blur(0px);
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; /* 防止 body 本身产生滚动条 */
-}
-
-/* --- 限制游戏主容器的高度 --- */
-.guixu-root-container {
-  height: 100%;
-  overflow-y: auto; /* 当内容超出时，在容器内部显示滚动条 */
-  box-sizing: border-box; /* 确保 padding 和 border 不会增加额外的高度 */
 }
 
 #startup-page {
