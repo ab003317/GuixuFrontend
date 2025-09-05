@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guixu Frontend</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div id="startup-page">
+
+      <!-- 主页面内容容器 -->
+      <div class="content-wrapper">
+
+        <!-- 主页面内容 -->
+        <div id="main-page-content">
+          <h1 id="main-title" class="title">归墟：【开局前端编辑器】</h1>
+          <div class="credits-container">
+            <p class="credits-author">作者: 类脑 / 旅途-梦星</p>
+            <p class="credits-musings">【赞美梦星大人！！！）】</p>
+          </div>
+
+          <!-- 主页面世界书预设 -->
+          <div id="world-book-controls" class="panel-section" style="padding: 15px; margin-bottom: 20px; max-width: 350px; margin-left: auto; margin-right: auto">
+            <div class="section-title" style="font-size: 1.2rem; margin-bottom: 15px">世界书预设</div>
+            <div style="display: flex; flex-direction: column; gap: 15px">
+              <div class="d-flex align-items-center justify-content-between">
+                <label for="unified-index-input" class="auto-write-label" style="font-size: 1rem; color: #c9aa71">读写序号:</label>
+                <div class="d-flex align-items-center gap-5">
+                    <input type="number" id="unified-index-input" value="1" min="1" style="width: 60px; background: rgba(0, 0, 0, 0.5); border: 1px solid #8b7355; color: #e0dcd1; border-radius: 4px; padding: 8px; font-size: 1rem; text-align: center; -moz-appearance: textfield;" />
+                    <div class="d-flex flex-column gap-2">
+                        <button id="index-increment-btn" class="index-stepper-btn" aria-label="增加序号">△</button>
+                        <button id="index-decrement-btn" class="index-stepper-btn" aria-label="减少序号">▽</button>
+                    </div>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; justify-content: center; gap: 10px">
+                <input type="checkbox" id="auto-toggle-lorebook-checkbox" style="cursor: pointer; width: 18px; height: 18px" />
+                <label for="auto-toggle-lorebook-checkbox" class="auto-write-label" style="font-size: 1rem; color: #c9aa71">自动开关世界书</label>
+              </div>
+            </div>
+          </div>
+         
+
+          <!-- 主页面菜单按钮 -->
+          <div id="main-menu-container">
+            <button id="start-game-btn" class="main-menu-btn">开启游玩！！</button>
+            <button id="quick-start-btn" class="main-menu-btn">快速开始</button>
+            <button id="show-save-manager-btn" class="main-menu-btn">存档管理</button>
+            <button id="show-editor-btn" class="main-menu-btn">天赋/背景编辑器</button>
+            <button id="show-snapshot-manager-btn" class="main-menu-btn">快照清理</button>
+          </div>
+
+        </div>
+
+        <!-- 天赋/背景编辑器 -->
+        <div id="startup-choice-container" style="display: none"></div>
+        <div id="quick-start-container" style="display: none; width: 100%; max-width: 800px;"></div>
+        <form id="setup-form" style="display: none"></form>
+        <div id="editor-container" style="display: none; width: 100%; max-width: 1000px">
+          <div class="tab-buttons" style="display: flex; justify-content: center; gap: 10px; margin-bottom: 20px">
+            <button class="tab-button active" data-tab="talents">天赋编辑器</button>
+            <button class="tab-button" data-tab="backgrounds">背景编辑器</button>
+            <button class="tab-button" data-tab="worldbooks">世界书编辑器</button>
+            <button class="tab-button" data-tab="presets">预设开局</button>
+          </div>
+
+          <!-- 编辑器内容 -->
+          <div class="tab-content">
+
+            <!-- 天赋编辑器 -->
+            <div id="talents-tab" class="tab-pane active" style="display: block">
+              <h2>天赋编辑器</h2>
+              <div id="talent-list-container" class="editor-list-container"></div>
+              <!-- 天赋编辑器下方的按钮 -->
+              <div style="margin-top: 15px; display: flex; justify-content: center; gap: 10px;">
+                <button id="add-new-talent-btn" class="editor-btn btn-primary">添加新天赋</button>
+                <button id="batch-import-talents-btn" class="editor-btn">批量导入</button>
+              </div>
+            </div>
+
+            <!-- 背景编辑器 -->
+            <div id="backgrounds-tab" class="tab-pane" style="display: none">
+              <h2>背景编辑器</h2>
+              <div id="background-list-container" class="editor-list-container"></div>
+              <!-- 背景编辑器下方的按钮 -->
+              <div style="margin-top: 15px; display: flex; justify-content: center; gap: 10px;">
+                <button id="add-new-background-btn" class="editor-btn btn-primary">添加新背景</button>
+                <button id="batch-import-backgrounds-btn" class="editor-btn">批量导入</button>
+              </div>
+            </div>
+
+            <!-- 世界书编辑器 -->
+            <div id="worldbooks-tab" class="tab-pane" style="display: none">
+              <h2>世界书编辑器</h2>
+              <div class="wb-filter-controls">
+                <div class="wb-filter-buttons">
+                  <button class="wb-filter-btn active" data-filter="all">全部</button>
+                  <button class="wb-filter-btn" data-filter="general">世界书</button>
+                  <button class="wb-filter-btn" data-filter="preset">预设</button>
+                  <button class="wb-filter-btn" data-filter="talent">天赋</button>
+                  <button class="wb-filter-btn" data-filter="background">背景</button>
+                </div>
+                <div class="wb-search-controls">
+                  <input type="search" id="wb-search-input" placeholder="搜索标题或内容..." class="modal-input" />
+                  <button id="wb-refresh-btn" class="editor-btn">刷新数据</button>
+                </div>
+              </div>
+              <div id="worldbook-list-container" class="editor-list-container"></div>
+              <div style="margin-top: 15px; display: flex; justify-content: center; gap: 10px;">
+                <button id="add-new-worldbook-btn" class="editor-btn">添加新世界书</button>
+                <button id="add-preset-worldbook-btn" class="editor-btn">创建预设专属条目</button>
+              </div>
+            </div>
+
+            <!-- 预设开局编辑器 -->
+            <div id="presets-tab" class="tab-pane" style="display: none">
+              <h2>预设开局编辑器</h2>
+              <div class="preset-editor-layout">
+
+                <div class="preset-list-panel">
+                  <div id="preset-list-container" class="preset-selection-list"></div>
+                  <div class="preset-actions">
+                    <button id="add-new-preset-btn" class="editor-btn btn-primary">创建新预设</button>
+                    <button id="import-preset-btn" class="editor-btn">导入</button>
+                    <button id="export-preset-btn" class="editor-btn">导出</button>
+                  </div>
+                </div>
+
+                <div class="preset-details-panel" id="preset-details-panel">
+                  <button type="button" id="preset-back-to-list-btn">< 返回预设列表</button>
+                  <div class="preset-header">
+                    <div class="preset-basic-info">
+                      <div class="modal-form-group"><label for="preset-name">预设名称</label><input type="text" id="preset-name" class="modal-input" /></div>
+                      <div class="modal-form-group"><label for="preset-author">作者</label><input type="text" id="preset-author" class="modal-input" /></div>
+                      <div class="modal-form-group"><label for="preset-series">系列</label><input type="text" id="preset-series" class="modal-input" placeholder="如：剑道、法术等" /></div>
+                      <div class="modal-form-group"><label for="preset-points">预设点数</label><input type="number" id="preset-points" class="modal-input" /></div>
+                    </div>
+                  </div>
+                  <div id="preset-controls-container"></div>
+                  <div id="preset-details-collapsible-area">
+                    <div class="preset-tabs">
+                      <button class="preset-tab-btn active" data-tab="attributes">属性配置</button>
+                      <button class="preset-tab-btn" data-tab="talents">天赋选择</button>
+                      <button class="preset-tab-btn" data-tab="series">系列内容</button>
+                      <button class="preset-tab-btn" data-tab="actions">操作</button>
+                    </div>
+                    <div class="preset-tab-content active" id="attributes-tab"><div class="attributes-grid" id="preset-attributes-grid"></div></div>
+                    <div class="preset-tab-content" id="talents-tab-content"><div class="talent-selection-container"><div class="talent-selection-box"><h4>可用天赋</h4><div id="available-talents-list"></div></div><div class="talent-selection-box"><h4>已选天赋</h4><div id="selected-talents-list"></div></div></div></div>
+                    <div class="preset-tab-content" id="series-tab"><div id="preset-series-content"></div></div>
+                    <div class="preset-tab-content" id="actions-tab"><div class="preset-actions-grid"><button id="export-current-preset-btn" class="action-btn">导出系列包</button><button id="duplicate-current-preset-btn" class="action-btn">复制预设</button><button id="delete-current-preset-btn" class="action-btn btn-danger">删除预设</button></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- 天赋/背景编辑器下方的按钮 -->
+          <div class="global-controls" style="text-align: center; margin-top: 20px">
+            <button id="import-all-btn" class="editor-btn">导入配置</button>
+            <input type="file" id="import-file-input" style="display: none" accept=".json,.txt" />
+            <button id="export-all-btn" class="editor-btn">导出所有配置</button>
+            <button id="reset-editor-btn" class="editor-btn btn-danger">重置编辑器</button>
+            <button id="back-to-main-btn" class="editor-btn">返回主页</button>
+          </div>
+
+        </div>
+
+        <div id="editor-modal" class="editor-modal"><div class="modal-content"><h2 id="modal-title">编辑</h2><form id="modal-form"><input type="hidden" id="modal-item-type" /><input type="hidden" id="modal-edit-identifier" /><input type="hidden" id="modal-edit-uid" /><div class="modal-form-group"><label for="modal-name">名称 (唯一标识)</label><input type="text" id="modal-name" class="modal-input" required /></div><div class="modal-form-group"><label for="modal-author">作者</label><input type="text" id="modal-author" class="modal-input" required /></div><div class="modal-form-group"><label for="modal-series">系列</label><input type="text" id="modal-series" class="modal-input" placeholder="可选项，如：剑道、丹道" /></div><div class="modal-form-group"><label for="modal-quality">品阶</label><input type="text" id="modal-quality" class="modal-input" placeholder="如：凡品、仙品、神品" /></div><div class="modal-form-group" id="modal-cost-group"><label for="modal-cost">消耗点数</label><input type="number" id="modal-cost" class="modal-input" required /></div><div class="modal-form-group"><label for="modal-description">描述</label><textarea id="modal-description" class="modal-textarea" rows="4" required></textarea></div><div class="modal-form-group" id="modal-initial-resources-group" style="display: none;"><label for="modal-initial-resources">初始资源 (每行一个)</label><textarea id="modal-initial-resources" class="modal-textarea" rows="4"></textarea></div><div class="modal-actions"><button type="button" id="modal-cancel-btn" class="editor-btn">取消</button><button type="button" id="modal-save-btn" class="editor-btn btn-primary">保存</button></div></form></div></div>
+        <div id="batch-import-modal" class="editor-modal"><div class="modal-content"><h2 id="batch-import-title">批量导入</h2><form id="batch-import-form"><input type="hidden" id="batch-import-type" /><div class="modal-form-group"><label for="batch-import-content">天赋/背景数据 (JSON格式)</label><div class="format-example"><p>请粘贴JSON数据，可以是JSON数组，或每行一个JSON对象。</p><p><b>格式示例 (天赋):</b></p><pre><code>{ "id": "新天赋", "name": "新天赋", "author": "作者", "series": "系列", "cost": 10, "quality": "凡品", "description": "这是一个新天赋。" }</code></pre><p><b>格式示例 (背景):</b></p><pre><code>{ "id": "新背景", "name": "新背景", "author": "作者", "series": "系列", "quality": "凡品", "description": "这是一个新背景。", "initialResources": ["资源1", "资源2"] }</code></pre></div><textarea id="batch-import-content" class="modal-textarea" rows="10" placeholder="在此粘贴JSON数据..."></textarea></div><div class="modal-actions"><button type="button" id="batch-import-cancel-btn" class="editor-btn">取消</button><button type="button" id="batch-import-save-btn" class="editor-btn btn-primary">导入</button></div></form></div></div>
+        <div id="worldbook-editor-modal" class="editor-modal"><div class="modal-content"><h2 id="wb-modal-title">编辑世界书条目</h2><form id="wb-modal-form"><input type="hidden" id="wb-modal-edit-uid" /><input type="hidden" id="wb-modal-preset-series" /><input type="hidden" id="wb-modal-preset-author" /><div class="modal-form-group"><label for="wb-modal-comment">标题 (Comment)</label><input type="text" id="wb-modal-comment" class="modal-input" required /></div><div class="modal-form-group"><label for="wb-modal-content">内容 (Content)</label><textarea id="wb-modal-content" class="modal-textarea" rows="6" required></textarea></div><div class="modal-form-group"><label for="wb-modal-keys">关键词 (逗号分隔, 仅“选择性”策略生效)</label><textarea id="wb-modal-keys" class="modal-textarea" rows="2"></textarea></div><div class="modal-form-grid"><div class="modal-form-group"><label for="wb-position-type">插入位置</label><select id="wb-position-type" class="modal-select"><option value="before_character_definition">角色定义前</option><option value="after_character_definition">角色定义后</option><option value="before_example_messages">示例消息前</option><option value="after_example_messages">示例消息后</option><option value="before_author_note">作者注释前</option><option value="after_author_note">作者注释后</option><option value="at_depth">指定深度</option></select></div><div class="modal-form-group"><label for="wb-position-order">插入顺序</label><input type="number" id="wb-position-order" class="modal-input" value="100"></div></div><div id="wb-depth-settings" style="display:none;" class="modal-form-grid"><div class="modal-form-group"><label for="wb-position-depth">深度 (Depth)</label><input type="number" id="wb-position-depth" class="modal-input" value="0"></div><div class="modal-form-group"><label for="wb-position-role">角色 (Role)</label><select id="wb-position-role" class="modal-select"><option value="system">系统 (System)</option><option value="user">用户 (User)</option><option value="assistant">助手 (Assistant)</option></select></div></div><div class="modal-form-grid"><div class="modal-form-group"><label>激活策略</label><button type="button" id="wb-strategy-toggle-btn" class="editor-btn" style="width:100%; margin-left:0;"></button></div><div class="modal-form-group" style="display: flex; flex-direction: column; justify-content: center; gap: 10px;"><div style="display: flex; align-items: center; gap: 10px;"><input type="checkbox" id="wb-recursion-incoming" style="width: 18px; height: 18px; cursor: pointer;"><label for="wb-recursion-incoming" style="margin-bottom: 0; cursor: pointer;">不可递归</label></div><div style="display: flex; align-items: center; gap: 10px;"><input type="checkbox" id="wb-recursion-outgoing" style="width: 18px; height: 18px; cursor: pointer;"><label for="wb-recursion-outgoing" style="margin-bottom: 0; cursor: pointer;">防止进一步递归</label></div></div></div><div class="modal-form-group" style="display: flex; align-items: center; gap: 10px;"><input type="checkbox" id="wb-modal-enabled" style="width: 18px; height: 18px; cursor: pointer;"><label for="wb-modal-enabled" style="margin-bottom: 0; cursor: pointer;">启用此条目</label></div><div class="modal-actions"><button type="button" id="wb-modal-cancel-btn" class="editor-btn">取消</button><button type="button" id="wb-modal-save-btn" class="editor-btn btn-primary">保存</button></div></form></div></div>
+      </div>
+
+      <div id="loading-overlay" class="loading-overlay"><p>正在衍化天机，构筑您的宿命...</p></div>
+    </div>
+
+
+    <div id="save-load-modal" class="modal-overlay"><div class="modal-content"><div class="modal-header"><h2 class="modal-title">读档 / 管理</h2><div class="modal-header-actions"><button data-action="import-save" class="theme-btn theme-btn-gold btn-small">导入存档</button><button data-action="clear-all-saves" class="theme-btn theme-btn-red btn-small">清除所有存档</button><button data-action="close-modal" class="modal-close-btn" aria-label="关闭">×</button></div></div><div class="modal-body"></div></div></div>
+    <input type="file" id="import-save-file-input" style="display: none;" accept=".json" />
+    <div id="default-import-modal" class="modal-overlay"><div class="modal-content" style="max-width: 500px;"><div class="modal-header"><h2 class="modal-title">初始化向导</h2></div><div class="modal-body"><p>检测到您的世界书为空或缺少核心天赋/背景。</p><p>是否要导入一套默认的天赋和背景作为开局模板？您也可以选择稍后手动创建或从文件导入。</p></div><div class="modal-footer"><button id="import-defaults-later-btn" class="theme-btn">以后再说</button><button id="import-defaults-confirm-btn" class="theme-btn theme-btn-gold">确认导入</button></div></div></div>
+    <button id="about-guixu-btn" aria-label="关于归墟">关于</button>
+    <div id="about-guixu-modal" class="modal-overlay"><div class="modal-content"><div class="modal-header"><h2 class="modal-title">关于归墟</h2></div><div class="modal-body about-modal-body"><div class="about-tabs"><button class="about-tab-btn active" data-tab="credits">感谢名单</button><button class="about-tab-btn" data-tab="editor-guide">编辑器说明</button><button class="about-tab-btn" data-tab="version-info">版本介绍</button></div><div class="about-tab-content active" data-tab-content="credits"></div><div class="about-tab-content" data-tab-content="editor-guide"></div><div class="about-tab-content" data-tab-content="version-info"></div></div><div class="modal-footer about-modal-footer"><div id="redemption-container" class="redemption-container"><input type="text" id="redemption-code-input" class="modal-input" placeholder="输入特殊兑换码..."><button id="redemption-code-btn" class="editor-btn">兑换</button></div><span id="about-countdown-timer"></span><button id="about-read-btn" class="editor-btn btn-primary" disabled>已阅读</button></div></div></div>
+    <button id="floating-settings-btn" data-action="show-settings" aria-label="打开设置">⚙️</button>
+    <div id="settings-modal" class="modal-overlay"><div class="modal-content"><div class="modal-header"><h2 class="modal-title">背景设置</h2><button id="modal-close-settings-btn" class="modal-close-btn" aria-label="关闭">×</button></div><div class="modal-body" id="settings-modal-body"></div></div></div>
+    <input type="file" id="local-bg-input" style="display: none;" accept="image/*" />
+    
+    <!-- 快照清理彈窗 -->
+    <div id="snapshot-manager-modal" class="modal-overlay">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">快照清理</h2>
+          <button data-action="close-modal" class="modal-close-btn" aria-label="关闭">×</button>
+        </div>
+        <div class="modal-body">
+          <p style="margin-bottom: 20px;">此工具用于清理游戏过程中产生的临时世界书条目。请谨慎操作。</p>
+          <div class="snapshot-section">
+             <div class="snapshot-section-header">
+                <h3 class="snapshot-section-title">【本世历程/往世涟漪】</h3>
+                <label class="select-all-label"><input type="checkbox" data-group="game-process"> 全选</label>
+             </div>
+             <div id="game-process-snapshot-list" class="editor-list-container" style="max-height: 25vh;"></div>
+          </div>
+          <div class="snapshot-section">
+             <div class="snapshot-section-header">
+                <h3 class="snapshot-section-title">【小说模式】</h3>
+                <label class="select-all-label"><input type="checkbox" data-group="non-game-process"> 全选</label>
+             </div>
+             <div id="non-game-process-snapshot-list" class="editor-list-container" style="max-height: 25vh;"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <span id="snapshot-selection-info" style="color: var(--color-text-dark);">已选择 0 项</span>
+          <button id="delete-selected-snapshots-btn" class="theme-btn theme-btn-red" disabled>删除选中项</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 天赋卡池预览彈窗 -->
+    <div id="talent-pool-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content" style="max-width: 800px;">
+            <div class="modal-header">
+                <h2 class="modal-title">天赋卡池预览</h2>
+                <button id="close-talent-pool-modal-btn" class="modal-close-btn" aria-label="关闭">×</button>
+            </div>
+            <div class="modal-body" id="talent-pool-modal-body" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px;">
+                <!-- 天赋卡池渲染在这里 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 天赋详情彈窗 -->
+    <div id="talent-detail-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content" style="max-width: 500px;">
+            <div class="modal-header">
+                <h2 class="modal-title" id="talent-detail-title">天赋详情</h2>
+                <button id="close-talent-detail-modal-btn" class="modal-close-btn" aria-label="关闭">×</button>
+            </div>
+            <div class="modal-body" id="talent-detail-body">
+                <!-- 天赋详情渲染在这里 -->
+            </div>
+        </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
