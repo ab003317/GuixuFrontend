@@ -3,9 +3,6 @@
 /* 类脑/旅程梦星作品，禁止二传，禁止商业化，均无偿免费开源分享 (V13 - Final Fix) */
 
 
-html, body { height: auto; min-height: 100%; }
-body { margin: 0; }
-
 :root {
   --color-primary: #c9aa71;
   --color-primary-hover: #daa520;
@@ -17,6 +14,13 @@ body { margin: 0; }
   --color-border: rgba(201, 170, 113, 0.5);
   --bg-overlay-color: rgba(0, 0, 0, 0.5);
   --bg-backdrop-filter: blur(0px);
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 #startup-page {

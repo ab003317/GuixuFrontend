@@ -1,4 +1,53 @@
-(  function () {
+$(() => {
+  console.log('归墟界面脚本已加载！');
+
+  // 获取需要操作的 DOM 元素
+  const aboutBtn = $('#about-guixu-btn');
+  const aboutModal = $('#about-guixu-modal');
+  const readBtn = $('#about-read-btn');
+
+  // 显示“关于”弹窗的函数
+  const showAboutModal = () => {
+    aboutModal.css('display', 'flex').attr('aria-hidden', 'false');
+  };
+
+  // 隐藏“关于”弹窗的函数
+  const hideAboutModal = () => {
+    aboutModal.css('display', 'none').attr('aria-hidden', 'true');
+  };
+
+  // --- 事件绑定 ---
+  // 点击“关于归墟”按钮，显示弹窗
+  aboutBtn.on('click', () => {
+    showAboutModal();
+  });
+
+  // 点击“已阅读”按钮，关闭弹窗
+  readBtn.on('click', () => {
+    hideAboutModal();
+  });
+
+  // 点击弹窗的灰色背景区域，关闭弹窗
+  aboutModal.on('click', event => {
+    // `event.target` 是指用户实际点击的元素
+    // 如果点击的是弹窗自身（即灰色背景），则关闭它
+    if (event.target === aboutModal[0]) {
+      hideAboutModal();
+    }
+  });
+
+  toastr.success('归墟界面加载完成');
+});
+
+// 卸载界面时执行的清理操作
+$(window).on('pagehide', () => {
+  // 在这里可以添加一些清理逻辑，比如移除事件监听器、清除定时器等
+  // 对于这个简单的例子，我们只打印一条消息
+  console.log('归墟界面已卸载。');
+  toastr.info('归墟界面已卸载');
+});
+
+(function () {
   // --- 全局配置 ---
   const LOREBOOK_NAME = '1归墟';
 
@@ -39,7 +88,7 @@
 
   // --- API 可用性检查 ---
   /* global TavernHelper, eventEmit, getChatMessages, getCurrentMessageId */
-  if (
+  /*if (
     typeof TavernHelper === 'undefined' ||
     typeof TavernHelper.getWorldbook === 'undefined' || // 检查新API是否存在
     typeof eventEmit === 'undefined' ||
@@ -52,7 +101,7 @@
         '<h1 style="color: red; text-align: center;">错误：SillyTavern 环境 API 未找到或不兼容。请确保TavernHelper插件已更新。</h1>';
     });
     return;
-  }
+  }*/
 
   // --- YAML解析器 (Stack-based to handle nesting) ---
   const YAMLParser = {
@@ -6636,3 +6685,5 @@ ${playerInput}
     }
   });
 })();
+
+
