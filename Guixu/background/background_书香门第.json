@@ -1,0 +1,11 @@
+{
+  "id": "书香门第",
+  "name": "书香门第",
+  "author": "梦星",
+  "series": "梦星",
+  "quality": "凡品",
+  "description": "你的家庭世代都是读书人。（初始神海+10）",
+  "initialResources": [
+    "一本古籍"
+  ]
+}

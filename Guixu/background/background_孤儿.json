@@ -1,0 +1,11 @@
+{
+  "id": "孤儿",
+  "name": "孤儿",
+  "author": "梦星",
+  "series": "梦星",
+  "quality": "下品",
+  "description": "你从小就是个孤儿，在街头流浪长大。（初始道心+5）",
+  "initialResources": [
+    "半块干粮"
+  ]
+}
