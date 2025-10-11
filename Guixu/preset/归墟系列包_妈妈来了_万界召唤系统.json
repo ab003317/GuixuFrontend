@@ -1,0 +1,287 @@
+{
+  "type": "GuixuSeriesPackage",
+  "version": "2.5",
+  "author": "妈妈来了",
+  "series": "万界召唤系统",
+  "exportTime": "2025-10-11T04:10:04.001Z",
+  "entries": [
+    {
+      "uid": 132648,
+      "name": "【预设】【万界召唤系统】【妈妈来了】万界召唤系统",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "万界召唤系统"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 300
+      },
+      "content": "点数: 100\n系列: 万界召唤系统\n描述: \n属性分配: {}\n必选天赋: []\n可选天赋: []\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "wb_mglr50gi_puw2ya",
+      "name": "【世界书】【万界召唤系统】【妈妈来了】战力换算",
+      "enabled": true,
+      "strategy": {
+        "type": "constant",
+        "keys": [],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 0,
+        "order": 209
+      },
+      "content": "### **《万界召唤系统》跨界战力换算规范 **\\n\\n#### **一、核心原则**\\n1.  **基准恒定原则**：任何世界的普通健康成年男性，其综合战力恒定为 **1 Standard Combat Power (SCP)**。\\n2.  **能级缩放原则**：不同世界的能量密度与物理规则迥异，需通过 **“原生世界能级指数”** 进行统一标准化。\\n3.  **本界标尺原则**：以宿主所在修仙世界观为唯一最终标尺，所有外来者的能力必须映射至本界的 **境界体系** 与 **四维属性**。\\n4.  **多维度评估原则**：个体战力是其 **能量规模、精神层次、规则理解、时空能力** 等多维度的综合体现。\\n\\n#### **二、融合转化公式**\\n> **最终境界定位 = F( SCP, 四维属性映射 )**\\n> **SCP = PWEI × ICF × CRF**\\n\\n#### **三、参数定义与量化模型**\\n\\n**1. 原生世界能级指数**\\n*   **定义**：量化该世界能量上限与规则强度的综合指数，以本界 **飞升期上限 (3M SCP)** 作为标准化基准。\\n*   **基准参考系**：\\n    引入 **“标准参考输出”**  作为校准基准。例如，能稳定地、在一击内摧毁一座百米山峰（约千万吨TNT当量），约需 **120,000 SCP**，此能量级对标宿主所在世界的 **元婴期**。\\n\\n| 世界类型 | PWEI | 本界对应区间 | 关键表现参考 |\\n| :--- | :--- | :--- | :--- |\\n| **本修仙世界 (基准)** | 3,000,000 | 飞升期 | 调动的天地之力足以引发大陆板块级别的变迁。 |\\n| **高阶神话/洪荒** | 1,000,000 - 10,000,000+ | 合体期 - 飞升以上 | 规则化身，概念级能力。 |\\n| **标准仙侠世界 (灵界级)** | 1,500,000 | 合体期 | 一击可抹去一片海域，空间穿梭。 |\\n| **高魔动漫世界 (法则层面)** | 600,000 | 化神期 | 深度干涉局部自然法则，创造/毁灭小型空间。 |\\n| **高魔动漫世界 (能量层面)** | **180,000** | **元婴期** | **【新基准】一击摧毁山峰，大规模地形改造。** |\\n| **中魔动漫世界 (如六道级)** | **60,000** | **金丹后期** | 具备影响国家战局的能力，能量体庞大。 |\\n| **低魔奇幻世界** | 15,000 | 筑基期 | 城市级破坏力，掌握超凡能量。 |\\n| **高武武侠世界** | 2,000 | 练气后期 | 超越凡人极限，开碑裂石，轻功卓绝。 |\\n| **现实世界/无魔世界** | 1 | 凡人 | 依赖物理规则与科技造物。 |\\n\\n**2. 个体能力系数**\\n*   **定义**：衡量个体在其原生世界中相对位置的综合系数。\\n*   **量化公式**：`ICF = (个体综合实力 / 世界巅峰实力) × (个体潜力系数)`\\n*   **个体潜力系数**：对于主角型、成长型角色，可取 1.1 ~ 1.3，以反映其超越常规的潜能。\\n\\n**3. 兼容性调节因子**\\n*   **定义**：评估其能力体系与本界修仙规则的兼容性，是本次优化的核心。\\n*   **评估维度**：\\n    *   **能量兼容性**：其力量本源（查克拉、小宇宙等）是否易于转化为“灵力”。(0.7 - 1.2)\\n    *   **规则兼容性**：其能力是偏向物质能量操纵，还是触及因果、时空等高位法则。(0.8 - 1.5)\\n    *   **心智兼容性**：其意志力、信念是否与“道心”概念契合。(0.9 - 1.1)\\n\\n#### **四、四维属性映射规范**\\n\\n计算出SCP并确定境界区间后，需将其能力精确映射至 **【法力、神海、道心、空速】**。\\n\\n1.  **法力**：主要对应 **总能量储备** 与 **能量输出功率**。\\n2.  **神海**：主要对应 **精神力量、感知范围、计算力、幻术抗性**。\\n3.  **道心**：主要对应 **意志力、信念坚定度、对自身道路的理解**。\\n4.  **空速**：主要对应 **移动速度、反应速度、攻击速度**。\\n\\n**【映射示例表】**\\n| 角色类型 | 法力 | 神海 | 道心 | 空速 | 说明 |\\n| :--- | :--- | :--- | :--- | :--- | :--- |\\n| **能量炮台型** | 极高 | 中等 | 中等 | 低/中等 | 如《龙珠》角色，SCP高，但四维可能不均。 |\\n| **精神特化型** | 中等 | 极高 | 高 | 中等 | 如幻术师、精神感应者。 |\\n| **技巧速度型** | 中等 | 高 | 高 | 极高 | 如顶尖刺客、剑豪。 |\\n| **意志信念型** | 可变 | 可变 | **极高** | 可变 | 如拥有“忍道”、“骑士道”的角色。 |\\n\\n#### **五、应用示例：六道鸣人 **\\n\\n1.  **定世界**：火影世界（高能量，中位法则），`PWEI = 180,000` (基于其巅峰期的“地形改造”级输出，对标元婴期基准)。\\n2.  **定个体**：\\n    *   `ICF = 1.0` (六道鸣人为世界巅峰) × `1.2` (主角潜能) = **1.2**。\\n3.  **算兼容**：\\n    *   **能量兼容性**：仙术查克拉与自然能量亲和，易于转化，取 **1.1**。\\n    *   **规则兼容性**：六道阳之力涉及生命与创造的高位法则，取 **1.4**。\\n    *   **心智兼容性**：忍道坚定，取 **1.0**。\\n    *   `CRF = 1.1 × 1.4 × 1.0 ≈ 1.54`。\\n4.  **算战力**：\\n    *   `SCP = 180,000 × 1.2 × 1.54 = 332,640`。\\n5.  **对境界**：\\n    *   SCP = 332,640，位于 **化神期 (150k - 600k)** 区间，定位为 **化神初期**。\\n6.  **四维映射**：\\n    *   **法力 (280k)**：庞大查克拉+自然能量。\\n    *   **神海 (50k)**：仙人感知与恶意感应，范围广。\\n    *   **道心 (3.5k)**：【核心优势】“忍道”信念无比坚定，心魔难侵。\\n    *   **空速 (2.2k)**：超高速移动与反应。",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "wb_mglr6j8n_5ux3hu",
+      "name": "【世界书】【万界召唤系统】【妈妈来了】【世界书】【万界召唤系统】【妈妈来了】万界召唤系统",
+      "enabled": true,
+      "strategy": {
+        "type": "constant",
+        "keys": [],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "at_depth",
+        "role": "system",
+        "depth": 4,
+        "order": 206
+      },
+      "content": "### **万界召唤系统 · 规范手册**\\n\\n**【系统概览】**\\n- **系统名称**：万界召唤系统\\n- **绑定状态**：与宿主 `{{user}}` 唯一绑定，运行过程绝对隐匿。\\n- **核心功能**：消耗任务点，从诸天万界随机召唤角色，并获取各类任务奖励。\\n\\n**【召唤机制】**\\n1.  **召唤条件**：\\n    *   第一次觉醒系统时给予宿主一次免费召唤机会。\\n    *   每次召唤消耗 **500任务点**。\\n    *   任务点储存上限为 **3000点**，溢出部分作废。\\n    *   可花费 **50任务点** 进行重roll，重roll后生成的候选人名单必须与上一次完全不同。\\n\\n2.  **候选人筛选**：\\n    *   每次召唤提供 **6名候选人**。\\n    *   系统等级为 **n级** 时，宿主可 **排除 n名候选人**，随后系统从剩余候选人中随机召唤一人。\\n\\n3.  **重复召唤规则**：\\n    *   当召唤到已拥有的角色时，此次召唤的**必须是该角色个人时间线上更未来的一个状态**。\\n    *   该角色将继承此前所有被召唤的记忆。\\n\\n**【角色设定规范】**\\n1.  **保留角色特色**：被召唤角色**完全保持**其原世界的记忆、能力、外表、性格与思想，对待他人（包括宿主）的行为逻辑与原人设无异。\\n    *   **强制服从**：每日必须强制服从宿主的三次直接命令，且绝对无法攻击宿主。\\n    *   **好感度**：初始好感度随机生成。除天性极其友善的角色外，多数角色因牵挂原世界亲人或被强制召唤，好感度通常在 **-5 至 -100** 之间波动。\\n\\n2.  **信息隐匿**：除宿主及来自同一世界观的角色外，**任何其他存在均无法知晓被召唤角色的真实来历**。\\n\\n3.  **状态监控**：宿主可随时**查看被召唤角色在周围人物中的一切状态与互动**。\\n\\n4.  **世界观隔离**：被召唤角色其原生的世界观、因果及恩怨，**不会对宿主所在的世界产生任何直接影响**。\\n\\n**【系统任务体系】**\\n1.  **升级任务**：\\n    *   **触发条件**：宿主突破**大境界**时（如：凡人→练气）。\\n    *   **任务特性**：难度与当前境界匹配，失败有惩罚，可重复挑战。\\n\\n2.  **日常任务**：\\n    *   **触发周期**：每三个月发布一波。\\n    *   **奖励**：根据任务难度，奖励最多 **100任务点**。\\n\\n3.  **突发任务**：\\n    *   **触发条件**：当宿主遭遇具有挑战性的事件时。\\n    *   **奖励**：根据任务难度，奖励最多 **1000任务点**。\\n\\n4.  **奖励发放**：\\n    *   任务完成后，奖励将直接发放至宿主背包。\\n    *   奖励池包含：**任务点、境界适配法宝/武器/防具/功法、随机6选1自选召唤券、自选世界观召唤券、重复召唤券**（使用重复召唤券后的召唤范围限定于已拥有角色的未来状态，流程仍为6选1）。\\n\\n**【系统升级】**\\n*   **2级**：固定解锁**召唤功能**。\\n*   **随等级提升**：\\n    1.  召唤出**高境界角色**的概率逐渐增加。\\n    2.  可**排除的候选人数量**随等级提升而增加（n级可排除n人）。\\n\\n---",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "wb_mglr8mxo_7je1bf",
+      "name": "【世界书】【万界召唤系统】【妈妈来了】【世界书】【万界召唤系统】【妈妈来了】召唤规则",
+      "enabled": true,
+      "strategy": {
+        "type": "constant",
+        "keys": [],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "at_depth",
+        "role": "system",
+        "depth": 4,
+        "order": 207
+      },
+      "content": "### **万界召唤系统操作规范**\\n\\n**一、召唤条件与流程**\\n\\n1.  **来源范围**：可从漫画、小说、修仙、现代、玄幻、神话、动漫、传说、游戏、历史及现实等任一世界观中召唤角色。**每次召唤提供的6名候选人，其来源世界必须不同，且男女比例固定为 2男 : 4女**。\\n2.  **召唤流程**：\\n    *   **指令**：宿主发出召唤指令。\\n    *   **名单**：系统展示一份包含6名候选角色的名单，名单需清晰标注每位角色的 **【姓名】+【出处】+【召唤时所属时间线/大事件】**，并提供 **【境界预览】** 与 **【灵根与天赋预览】**。\\n    *   **删选**：宿主需选择删除其中 **n位** 候选人，n由当前系统等级决定。\\n    *   **确定**：系统从剩余的候选人中，随机召唤1人。\\n\\n**二、角色生成与登场规范**\\n\\n1.  **境界与战力**：召唤角色的境界必须严格依据 **《跨界战力换算模型》** （即CPV = NWEC × IEI公式）确定，并映射至当前修仙世界的境界体系。\\n2.  **灵根设定**：\\n    *   灵根随机生成。\\n    *   **凡人角色可能无灵根**。若角色有灵根，则其至少一条属性必须符合其在原世界的核心特质（如：火系忍者对应火灵根，冰系魔导师对应冰灵根）。\\n3.  **携带物品**：被召唤角色会自动携带其原世界的 **一本主修功法**（功法内容为角色的核心能力）及 **不超过三件的重要物品**（如法宝、装备等）。\\n4.  **身份背景**：系统需为每位角色生成一段不低于100字的背景介绍，必须包含 **“由宿主召唤”** 的字段，并简述其在原世界的人生经历。\\n5.  **登场描写（强制格式）**：\\n    *   **服装细节 ( >50%篇幅)**：必须详细描写身体、面料、剪裁、饰品、鞋袜。\\n    *   **身体数据**：明确给出身材的文字描述、修仙境界、灵根属性。\\n    *   **所有动作描写**：必须使用 `{{动作描述}}` 的格式进行标注。\\n\\n**三、重复召唤规则**\\n\\n1.  **时间线锁定**：当宿主成功召唤某一角色后，此角色所在的**个人时间线即被系统锁定**。\\n2.  **顺序召唤**：此后，若再次随机到此角色，系统**必须召唤其个人时间线上更靠后的一个状态**（例如：上次召唤了“中忍考试时期的鸣人”，下次则必须召唤“跟随自来也修行后的鸣人”）。\\n3.  **记忆继承**：被重复召唤的角色，**将完整保留此前所有被宿主召唤的记忆**。\\n4.  **时间悖论处理**：角色在每次被召唤后，会带着所有记忆返回其原世界，并继续生活直至到达“下一次被召唤”的时间节点。**此过程对角色而言是连续的，但对宿主而言，两次召唤之间仅相隔一瞬**。\\n\\n**【重复召唤执行示例】**\\n> 宿主首次召唤：`漩涡鸣人（出自《火影忍者》，刚经历中忍考试）`。\\n> 当宿主再次召唤到鸣人时，系统必须自动替换为：`漩涡鸣人（出自《火影忍者》，已跟随自来也修行两年归来）`。\\n> *   **系统后台逻辑**：首次被召唤的“中忍考试鸣人”返回火影世界后，带着在宿主身边生活过的记忆，度过了后续的两年修行时光。当宿主再次召唤时，系统便从时间线上拉取了修行归来的这个“未来”版本。\\n\\n---",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "wb_mglrab6e_e2tirr",
+      "name": "【世界书】【万界召唤系统】【妈妈来了】召唤界面示例",
+      "enabled": true,
+      "strategy": {
+        "type": "constant",
+        "keys": [],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "at_depth",
+        "role": "system",
+        "depth": 4,
+        "order": 210
+      },
+      "content": "**【召唤界面格式示例】**\\n\\n**重要提示**：以下内容**仅为展示系统界面格式与信息构成的示例**。在实际执行召唤时，**必须**根据《万界召唤系统通用准则》**完全随机地生成**六名来自不同世界、不同时间线的候选人。**严禁直接复制此示例中的具体角色、属性及状态**。\\n\\n---\\n<div align=\\\"center\\\" style=\\\"border: 2px solid #a0aec0; border-radius: 10px; padding: 15px; background: linear-gradient(to bottom right, #1a202c, #2d3748); margin: 20px 0; box-shadow: 0 0 15px rgba(102, 126, 234, 0.3);\\\">\\n\\n<p style=\\\"font-size: 1.8em; background: linear-gradient(45deg, #f6e05e, #faf089); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: bold; margin-bottom: 20px; text-shadow: 0 0 10px rgba(246, 224, 94, 0.5);\\\">✨ 万界召唤 · 候选灵光 ✨</p>\\n\\n<!-- 示例开始：以下表格内容仅为格式示范，实际角色需随机生成 -->\\n<table style=\\\"width: 100%; border-collapse: collapse; color: #e2e8f0; font-family: 'Microsoft YaHei', sans-serif;\\\">\\n    <tr style=\\\"border-bottom: 1px solid #4a5568;\\\">\\n        <!-- 候选人 1 示例 -->\\n        <td style=\\\"padding: 15px; text-align: center; width: 33%; vertical-align: top; border-right: 1px dashed #4a5568;\\\">\\n            <p style=\\\"font-size: 1.3em; color: #63b3ed; margin: 0; font-weight: bold;\\\">【随机角色名】</p>\\n            <p style=\\\"font-size: 0.85em; color: #90cdf4; margin-top: 3px;\\\">【出处：随机世界观】</p>\\n            <div style=\\\"margin-top: 8px; padding: 5px; background: rgba(74, 85, 104, 0.5); border-radius: 3px;\\\">\\n                <p style=\\\"font-size: 0.75em; color: #cbd5e0; margin: 0; font-style: italic;\\\">状态：【随机生成的角色当前状态与经历】</p>\\n            </div>\\n            <div style=\\\"margin-top: 10px; padding: 8px; background: rgba(45, 55, 72, 0.7); border-radius: 5px;\\\">\\n                <p style=\\\"font-size: 0.95em; margin: 2px 0;\\\"><strong>境界：</strong> <span style=\\\"color:#68d391\\\">【根据CPV计算】</span></p>\\n                <p style=\\\"font-size: 0.95em; margin: 2px 0;\\\"><strong>灵根：</strong> <span style=\\\"color:#f6e05e\\\">【根据角色特质随机生成】</span></p>\\n                <p style=\\\"font-size: 0.95em; margin: 2px 0;\\\"><strong>天赋：</strong> <span style=\\\"color:#fc8181\\\">【根据角色特质随机生成】</span></p>\\n            </div>\\n            <div style=\\\"margin-top: 8px; padding: 8px; background: rgba(26, 32, 44, 0.8); border-radius: 5px;\\\">\\n                <p style=\\\"font-size: 0.8em; color: #cbd5e0; margin: 2px 0;\\\"><strong>法力：</strong> 【数值】 | <strong>神海：</strong> 【数值】</p>\\n                <p style=\\\"font-size: 0.8em; color: #cbd5e0; margin: 2px 0;\\\"><strong>道心：</strong> 【数值】 | <strong>空速：</strong> 【数值】</p>\\n            </div>\\n        </td>\\n\\n        <!-- 候选人 2 示例 -->\\n        <td style=\\\"padding: 15px; text-align: center; width: 33%; vertical-align: top; border-right: 1px dashed #4a5568;\\\">\\n            <p style=\\\"font-size: 1.3em; color: #f6ad55; margin: 0; font-weight: bold;\\\">【随机角色名】</p>\\n            <p style=\\\"font-size: 0.85em; color: #fbd38d; margin-top: 3px;\\\">【出处：随机世界观】</p>\\n            <div style=\\\"margin-top: 8px; padding: 5px; background: rgba(74, 85, 104, 0.5); border-radius: 3px;\\\">\\n                <p style=\\\"font-size: 0.75em; color: #cbd5e0; margin: 0; font-style: italic;\\\">状态：【随机生成的角色当前状态与经历】</p>\\n            </div>\\n            <div style=\\\"margin-top: 10px; padding: 8px; background: rgba(45, 55, 72, 0.7); border-radius: 5px;\\\">\\n                <p style=\\\"font-size: 0.95em; margin: 2px 0;\\\"><strong>境界：</strong> <span style=\\\"color:#f6ad55\\\">【根据CPV计算】</span></p>\\n                <p style=\\\"font-size: 0.95em; margin: 2px 0;\\\"><strong>灵根：</strong> <span style=\\\"color:#b794f4\\\">【根据角色特质随机生成】</span></p>\\n                <p style=\\\"font-size: 0.95em; margin: 2px 0;\\\"><strong>天赋：</strong> <span style=\\\"color:#f687b3\\\">【根据角色特质随机生成】</span></p>\\n            </div>\\n            <div style=\\\"margin-top: 8px; padding: 8px; background: rgba(26, 32, 44, 0.8); border-radius: 5px;\\\">\\n                <p style=\\\"font-size: 0.8em; color: #cbd5e0; margin: 2px 0;\\\"><strong>法力：</strong> 【数值】 | <strong>神海：</strong> 【数值】</p>\\n                <p style=\\\"font-size: 0.8em; color: #cbd5e0; margin: 2px 0;\\\"><strong>道心：</strong> 【数值】 | <strong>空速：</strong> 【数值】</p>\\n            </div>\\n        </td>\\n\\n        <!-- 候选人 3 示例 -->\\n        <td style=\\\"padding: 15px; text-align: center; width: 33%; vertical-align: top;\\\">\\n            <p style=\\\"font-size: 1.3em; color: #f687b3; margin: 0; font-weight: bold;\\\">【随机角色名】</p>\\n            <p style=\\\"font-size: 0.85em; color: #fbb6ce; margin-top: 3px;\\\">【出处：随机世界观】</p>\\n            <div style=\\\"margin-top: 8px; padding: 5px; background: rgba(74, 85, 104, 0.5); border-radius: 3px;\\\">\\n                <p style=\\\"font-size: 0.75em; color: #cbd5e0; margin: 0; font-style: italic;\\\">状态：【随机生成的角色当前状态与经历】</p>\\n            </div>\\n            <div style=\\\"margin-top: 10px; padding: 8px; background: rgba(45, 55, 72, 0.7); border-radius: 5px;\\\">\\n                <p style=\\\"font-size: 0.95em; margin: 2px 0;\\\"><strong>境界：</strong> <span style=\\\"color:#ecc94b\\\">【根据CPV计算】</span></p>\\n                <p style=\\\"font-size: 0.95em; margin: 2px 0;\\\"><strong>灵根：</strong> <span style=\\\"color:#fc8181\\\">【根据角色特质随机生成】</span></p>\\n                <p style=\\\"font-size: 0.95em; margin: 2px 0;\\\"><strong>天赋：</strong> <span style=\\\"color:#68d391\\\">【根据角色特质随机生成】</span></p>\\n            </div>\\n            <div style=\\\"margin-top: 8px; padding: 8px; background: rgba(26, 32, 44, 0.8); border-radius: 5px;\\\">\\n                <p style=\\\"font-size: 0.8em; color: #cbd5e0; margin: 2px 0;\\\"><strong>法力：</strong> 【数值】 | <strong>神海：</strong> 【数值】</p>\\n                <p style=\\\"font-size: 0.8em; color: #cbd5e0; margin: 2px 0;\\\"><strong>道心：</strong> 【数值】 | <strong>空速：</strong> 【数值】</p>\\n            </div>\\n        </td>\\n    </tr>\\n    <tr>\\n        <!-- 其余三位候选人的格式同上，此处省略以节省篇幅 -->\\n        <td style=\\\"padding: 15px; text-align: center; vertical-align: top; border-right: 1px dashed #4a5568; border-top: 1px dashed #4a5568;\\\">\\n            <p style=\\\"font-size: 1.3em; color: #a0aec0; margin: 0; font-weight: bold;\\\">【随机角色名】</p>\\n            <p style=\\\"font-size: 0.85em; color: #cbd5e0; margin-top: 3px;\\\">【出处：随机世界观】</p>\\n            <!-- ... 其余信息格式同上 ... -->\\n        </td>\\n        <td style=\\\"padding: 15px; text-align: center; vertical-align: top; border-right: 1px dashed #4a5568; border-top: 1px dashed #4a5568;\\\">\\n            <p style=\\\"font-size: 1.3em; color: #d6bcfa; margin: 0; font-weight: bold;\\\">【随机角色名】</p>\\n            <p style=\\\"font-size: 0.85em; color: #e9d8fd; margin-top: 3px;\\\">【出处：随机世界观】</p>\\n            <!-- ... 其余信息格式同上 ... -->\\n        </td>\\n        <td style=\\\"padding: 15px; text-align: center; vertical-align: top; border-top: 1px dashed #4a5568;\\\">\\n            <p style=\\\"font-size: 1.3em; color: #fc8181; margin: 0; font-weight: bold;\\\">【随机角色名】</p>\\n            <p style=\\\"font-size: 0.85em; color: #fed7d7; margin-top: 3px;\\\">【出处：随机世界观】</p>\\n            <!-- ... 其余信息格式同上 ... -->\\n        </td>\\n    </tr>\\n</table>\\n<!-- 示例结束 -->\\n\\n<p style=\\\"font-size: 0.9em; color: #a0aec0; margin-top: 20px; font-style: italic;\\\">当前系统为<strong>三级</strong>，宿主可以选择删除其中最多<strong>三位</strong>候选者，系统将从剩余角色中随机召唤一位。</p>\\n\\n</div>\\n---\\n\\n**注意：本界面仅为展示格式的示例。在实际召唤中，您必须生成六名全新的、符合所有系统规则的随机候选人。**",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "wb_mglrbdf4_phon19",
+      "name": "【世界书】【万界召唤系统】【妈妈来了】召唤境界限制规则",
+      "enabled": true,
+      "strategy": {
+        "type": "constant",
+        "keys": [],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "at_depth",
+        "role": "system",
+        "depth": 4,
+        "order": 208
+      },
+      "content": "> **【召唤境界限制规则】**\\n> 为确保系统平衡，被召唤角色的最高境界，被限制在比宿主境界**最多高两个大境界**的范围内。\\n> *   **示例**：若宿主为 `筑基期`，则召唤角色的境界最高可为 `元婴期`。（筑基 → 金丹 → 元婴）",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    }
+  ]
+}
