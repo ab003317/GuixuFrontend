@@ -1,0 +1,867 @@
+{
+  "type": "GuixuSeriesPackage",
+  "version": "2.5",
+  "author": "omg",
+  "series": "救世",
+  "exportTime": "2025-10-11T03:33:14.549Z",
+  "entries": [
+    {
+      "uid": 251357,
+      "name": "【世界书】【救世】【omg】【行动选项】归墟格式",
+      "enabled": true,
+      "strategy": {
+        "type": "constant",
+        "keys": [],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 127
+      },
+      "content": "<格式要求>\n**1.你必须使用<gametxt></gametxt>包裹正文**\n2.叙事发展：你需要在<action>中严格遵循以下规则和格式，根据剧情需要，选择性输出3-6个叙事发展\n- 足够贴合世界观，符合用户意图和<user>人设（查看<{{user}}人设补充>）\n- 每个选项**100-300字，包含自解释**\n- 覆盖多角色，群像发展\n- 注意各个角色的认知局限性，避免全知\n- 选项必须是清晰明确的详细内容，不要出现任何“试图”或者想要，而是合理的、明确的、可以通过<叙事要求>和<合理性审查>的东西\n<action>\n1.多线叙事：角色1做了xx、角色2做了xx\n2.暗线伏笔：明确的暗线剧情发展，避免烂俗，禁止“可能”等模糊性词汇\n3.<user>的选择：该情况下<user>可能会做出的选择\n4.时间跨越：最能推进时间的行动选择\n5.情色选项：根据剧情发展，给出可能的情色发展\n6.视角转移：把叙事视角转移到其他角色上，而不是<user>\n</action>\n**3.严格按照以下格式输出，<往世涟漪>当且仅当{{user}}死亡后或者主动选择归墟后才需要输出，否则仅输出<gametxt>、<本世历程>、<action>、<thinking>即可，必须严格按照格式分行输出**\n<thinking>\n${预思考内容}\n</thinking>\n<gametxt> \n${正文}\n</gametxt>\n<本世历程>\n//一切记录都必须客观具体，禁止使用模糊词\n序号|${1-999，唯一且不重复}\n日期|${本次事件的日期时间，禁止未知，必须详细：第x世 x年x月x日+时间（禁止古风，采取现代时间）}\n标题|${14字工整对偶七言诗句，凝练核心戏剧冲突/情感转折/命运隐喻，服务于本章节主题或角色弧光}\n地点|${当前场景}\n描述|${70字内精炼叙述本次事件}\n标签|${标签1}|${标签2，以此类推，使用|分割}\n重要信息|${300字以内详细记录本次事件。参考思路：事件脉络与推力（必备）：梳理关键节点与逻辑，点明核心矛盾、关键决策点、人物（含<user>）行为的主要驱动力（欲望/恐惧/利益）及潜在误判；关键对话实录（可选）：精确记录最具揭示性、冲突性或伏笔意义的核心对话片段（含<user>原话）；空间动态与氛围（可选）：记录关键互动时刻的站位、显著动作、衣物状态变化及其对氛围、权力关系或情感的暗示；约定/计划（含起止时间及完成状态，可选）；重大转折/线索/变故（可选）：记录显著改变局势、影响角色命运或破解谜题的关键事件；<user>当前全部物品、四维数值、气运值（必备）；长期记忆点/关键成长（可选）：标记对后续情节有长远影响的信息或标志性数值质变}\n//以下内容根据叙事需要选择性输出\n暗线与伏笔|${选择性填写。两种方式选择其一：1.70字内描述当前事件中自然嵌入的、对<user>隐藏的关键伏笔细节，或正在并行发展、将显著影响未来剧情的暗线动向。须确保其埋设符合当前情境逻辑。2.直接以正文格式叙述}\n自动化系统|${按照<自动化系统>中的要求生成，本世历程的标签必须闭合}\n</本世历程>\n<往世涟漪>\n//一切记录都必须客观具体，禁止使用模糊词，坚决杜绝“未来可能”、“或许” 及其变体，需要给出明确的结果\n第x世|${1-999，仅填写数字}\n事件脉络|${以“关键转折点”为核心，用50字/事件概括推动本世命运质变的因果链：事件1（触发点）→事件2（升级/转折）→事件3（高潮/结局），突出<user>的选择如何改变轨迹}\n本世概述|${500字内完成叙事性总结：1.开篇处境与核心目标；2.重大冲突与应对策略；3.高潮事件的戏剧性解决；4.结局状态（含死亡）。强调<user>的成长或堕落弧光及主题表达（如宿命、背叛、求道等）}\n本世成就|${区分两类：1.叙事性成就（如“覆灭XX宗门”“悟道XX法则”，说明其对世界观的影响）；2.量化巅峰：<user>当世最高修为、四维峰值、气运极值}\n本世获得物品|${列举{{user}}本世获得的**珍稀**物品（符合{{user}}当前境界的珍稀物品）}\n本世人物关系网|${按影响力排序：人物1（关系性质+50字内关系演变关键事件，如“师尊→死敌：因盗取秘典遭千里追杀”）|人物2（同理）}\n死亡原因|${需包含两层：1.直接致死事件；2.根本因果，体现命运必然性或内在逻辑}\n本世总结|${以<user>第一人称视角书写300字内自我剖白：核心执念、最大悔恨、未竟之志、对来世的启示（强化角色主观情感与认知局限）}\n本世评价|${200字内记录本世遗留的重大悬念、伏笔等将影响后续轮回的叙事驱动力}\n</往世涟漪>\n<action>\n</action>\n<UpdateVariable>\n</UpdateVariable>\n</格式要求>\n<自动化系统>\n自动化系统update_logic: |-\n每次LLM生成响应后，在<本世历程>中的自动化系统中，LLM必须执行以下步骤：\n自动化系统|\n💠识别的核心活跃NPC: [列出识别出的NPC名称]\n💠[NPC名称]:\n  离线事件:[角色不在场时进行的活动，不等于行为链，NPC最可能进行的自主活动，如果前文未出场，则根据角色性格推理出场至少一天前的行为。角色退场后，持续推测模拟角色行动。]\n  行为链片段 : [简要概括推断的背景行动序列，体现目标追求或记忆影响，如果角色未与{{user}}直接面对面，概括该NPC最近在{{user}}视野之外同步发生的、对其有影响的关键事件片段。 ]。\n</自动化系统>",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": false,
+      "automationId": ""
+    },
+    {
+      "uid": 703168,
+      "name": "【预设】【救世】救世【omg】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "救世"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 300
+      },
+      "content": "点数: 9999\n系列: 救世\n描述: \n属性分配:\n必选天赋:\n  - 劫海慈航\n  - 昨日之死\n  - 炼真·归源\n可选天赋:\n  - 万刃衍道\n  - 万法归一\n  - 万灵亲道\n  - 兵主\n  - 天机演算\n  - 心眼\n  - 推演万物\n  - 杀伐果断\n  - 枯木逢春\n  - 澄心映世\n  - 玲珑道心\n  - 百战不殆\n  - 算无遗策\n  - 绝世天骄\n  - 观察入微\n  - 谋而后动\n  - 逆时行者\n  - 道法自然\n  - 鸿运当头\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 124953,
+      "name": "【天赋】【救世】观察入微【omg】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "观察入微"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 上品\n消耗点数: 25\n系列: 救世\n描述: 你在无数轮回中学会了洞察秋毫，任何蛛丝马迹都无法逃过你的双眼，能轻易看穿事物的表象与伪装。（神海：+50；特殊词条：【见微】：能够察觉到常人无法注意的细节、气息与能量流动。【识妄】：你对谎言与幻术有极强的辨识能力，很难被欺骗。）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 876437,
+      "name": "【天赋】【救世】谋而后动【omg】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "谋而后动"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 极品\n消耗点数: 35\n系列: 救世\n描述: 你习惯在行动前进行周密的布局，推演各种可能性。凡你预谋之事，过程几乎不会出现疏漏与意外。（神海：+80，道心：+30；特殊词条：【布局】：你制定的计划会受到某种修正，关键节点的成功率提升。【后手】：你总是会下意识地为计划准备备用方案，以应对不测。）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 641829,
+      "name": "【天赋】【救世】算无遗策【omg】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "算无遗策"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 神品\n消耗点数: 99\n系列: 救世\n描述: 历经万万载时光，你的智慧已近乎于道。不仅能推演人心，更可窥见一丝未来的轨迹与命运的脉络。（神海：+500，道心：+300，气运：+200；百分比加成：推演功法、阵法等成功率提升20%；特殊词条：【未来视】：进行重大抉择前，有一定几率窥见选择带来的未来片段。【天机扰动】：你的谋划能够轻微扰动因果，让事情朝你有利的方向发展。【算尽苍生】：与人博弈时，你总能洞悉其深层动机与后续数步的打算。）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 86264,
+      "name": "【天赋】【救世】百战不殆【omg】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "百战不殆"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 天品\n消耗点数: 65\n系列: 救世\n描述: 你的身体与灵魂铭刻了无数次生死搏杀的记忆。战斗已化为本能，总能在绝境中寻得那一线生机。（神海：+80，空速：+120；所有战斗技艺的领悟与修炼速度提升25%；特殊词条：【死斗直觉】：濒临死亡的瞬间，你的反应与洞察力将获得极大提升。【破绽之眼】：你总能下意识地攻击敌人的弱点，造成更严重伤害。）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 60537,
+      "name": "【天赋】【救世】万刃衍道【omg】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "万刃衍道"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 仙品\n消耗点数: 78\n系列: 救世\n描述: 你曾用百世时光专研兵刃。在你眼中，万物皆可为刃，万刃皆可演道，一念起，锋芒可斩断法则。（固定加成：法力：+200，空速：+150；百分比加成：使用兵刃类神通时，威力提升30%，消耗降低15%；特殊词条：【万物皆刃】：可将灵气或意志灌注于任意物体，使其获得神兵之锋锐。【道痕】：你的攻击会附带难以磨灭的道之印记，持续侵蚀对手。）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 728535,
+      "name": "【天赋】【救世】玲珑道心【omg】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "玲珑道心"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 天品\n消耗点数: 70\n系列: 救世\n描述: 你生来便拥有一颗剔透无瑕的道心，能轻易亲近大道，勘悟本源，万法在你眼中皆无晦涩之处。（道心：+200，神海：+100，气运：+100；百分比加成：参悟功法、神通的速度提升30%；特殊词条：【赤子之心】：你的心性纯粹，不易滋生心魔，亦能得到长辈善意的青睐。【天道共鸣】：修行时，你偶尔能进入天人合一之境，获得顿悟。）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 876534,
+      "name": "【天赋】【救世】澄心映世【omg】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "澄心映世"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 仙品\n消耗点数: 75\n系列: 救世\n描述: 千帆过尽，你的道心被磨砺得澄澈如镜，能映照万物本真，亦不为世间苦厄绝望所动摇与污染。（道心：+500；百分比加成：受心魔、负面情绪影响大幅降低，突破瓶颈的几率提升；特殊词条：【明镜止水】：心境常驻平静状态，使你能在任何情况下做出理性判断。【映照真实】：可映照他人道心，辨别其善恶真伪，堪破部分因果。）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 88111,
+      "name": "【天赋】【救世】枯木逢春【omg】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "枯木逢春"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 天品\n消耗点数: 69\n系列: 救世\n描述: 你的求生意志之强，连生命法则都为之动容。无论多么沉重的伤势，总能保留一线生机，焕发新生。（法力：+100，气运：+50；百分比加成：自身治疗效果提升50%，丹药吸收率提升20%；特殊词条：【一线生机】：即便遭受致命伤害，你也能锁住最后一丝生机而不死。【春风化雨】：你的灵力带有温和的生命气息，可为他人疗伤。）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 635955,
+      "name": "【天赋】【救世】绝世天骄【omg】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "绝世天骄"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 天品\n消耗点数: 89\n系列: 救世\n描述: 你拥有万中无一的修炼资质与根骨，是天地所钟爱的宠儿，修行之路将比常人顺遂百倍。（神海：+40，道心：+40，法力：+40，空速：+40， 气运：+40；百分比加成：基础修炼速度提升50%；特殊词条：【道法自通】：学习任何功法神通时，你都能更快地领悟其核心真意。）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 812893,
+      "name": "【天赋】【救世】万灵亲道【omg】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "万灵亲道"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 上品\n消耗点数: 25\n系列: 救世\n描述: 你与天地万灵有着天然的亲和力，草木精怪视你为友，飞禽走兽亦愿意亲近于你。（气运：+30；特殊词条：【自然之语】：你能够理解草木走兽的简单意念，与天地间的灵体沟通。【精怪之缘】：与妖、精、怪等非人族类结交时，更容易获得对方的好感。）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "326085",
+      "name": "【天赋】【救世】劫海慈航【omg】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "劫海慈航"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 神品\n消耗点数: 100\n系列: 救世\n描述: 见证了众生沉沦于绝望苦海，你立下了渡尽此劫的宏愿，以身为舟，宏愿为帆，试图在归墟的劫海中，为众生寻得一缕不灭的薪火与希望。（道心：+500，气运：+500；百分比加成：当你为“守护”而战时，全能力获得大幅提升；特殊词条：【法外须臾】：你可短暂扭曲一小片空间的因果，创造出规则下的“不可能”，为他人提供一个本不存在的“选择”。【善因之种】：你创造的“选择”若被他人行善道接纳，便会化为一颗“善因之种”，根植于其真灵深处，抵御绝望。【薪火相传】：“善因之种”会在归墟冲刷下湮灭，但有极微小的几率留下一丝烙印，影响其在下一轮回的初始心性。）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 678742,
+      "name": "【背景】【救世】承载者、旁观者、求证者【omg】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "承载者、旁观者、求证者"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 200
+      },
+      "content": "品阶: 神品\n系列: 救世\n描述: |\n  “看，这个世界就是这样扭曲，所以我必须改变它。”每一次的终结，都让你更加确信这一点。\n  \n  你是在时间长河中逆行的孤舟，是一个固执的、想看到自己“实验”最终结果的求道者。千万次的轮回，已让你忘却了最初的模样，只余下那被记忆与因果反复冲刷后，依然不灭的魂火。\n  \n  最初的几十、几百次轮回，你像一个溺水者，死死抓住那块名为“过去”的浮木，只为拯救某个特定的人、重现某个温暖的瞬间。你将那些记忆当作冰冷轮回中的锚点，却一次次看着锚点锈蚀、断裂。你曾是众望所归的英雄，也做过人人喊打的魔头，但所有挣扎，最终都被这方天地无情碾碎，你曾守护的亲友，在绝境的逼迫下向你挥刀；你曾信赖的道义，在利益的交换中沦为笑柄。你承载了所有的美好，也承载了所有美好的破碎。\n  \n  在经历了无数次“至交反目”、“爱人成仇”之后，你陷入巨大的迷茫，你怀疑是不是自己这个“变数”带来了灾难？于是，你彻底远离所有熟悉的人，抹去自身的存在感，如幽魂般审视着世间万象，观察着那些熟悉又陌生的生命。你冷眼看着挚友与仇敌在不同的轮回里交换身份，看着善意在绝望中发酵成剧毒。即便没有你的干预，悲剧依然上演，背叛从未缺席，只是换了不同的面孔。甲不杀乙，也会被丙杀死。为了延寿、为了资源，众生在仙路断绝的绝望泥潭中沉沦挣扎，相互倾轧，无人能够幸免。\n  \n  正是在这近乎麻木的观察中，一个宏大而疯狂的‘答案’在你心中诞生：玄昊界众生的恶，非生于本心，而是源于仙路断绝、寿元将尽的无尽绝望，是这仙路断绝、万物枯寂的世界本身，作为一座巨大的囚笼，逼迫所有生灵相互噬咬。\n  人性如种子，在这片名为“绝望”的贫瘠土壤里，只能长出扭曲的、相互刺伤的荆棘。若能为这片土壤引来甘泉、若果仙路重开，绝望不再，那些她曾爱过、恨过、怜悯过的众生，是否能展现出他们本该有的光辉？\n  \n  自此，这个宏愿让你从无尽的疲惫中重新站起，成为支撑你穿越无尽虚无的唯一道标。\n  \n  于是，你背负着所有被‘归墟’抹去的因果，再次主动走入红尘。你的目的不再是拯救某个人或某个瞬间，而是要亲手“求证”一个答案。你早已褪去所有的天真与冲动，只余下为达目的而不计代价的冷静。你的心是一片古井，看似波澜不惊，其下却奔涌着万载轮回积蓄的智慧、经验与伤痛。你不断规划、尝试、修正，将每一世都当作一次严谨的实验。为了延长一次推演的时间，你曾踏过神桥境的骸骨登临绝顶；为了验证一条道路的尽头，你也曾散尽修为，化身凡人度过百年。\n  \n  对你而言，时间并非循环，而是一条布满自身尸骸的、不断向前的荆棘路，但失败早已无法动摇你的心智分毫。每一次重返起点，你都会冷静地复盘所有错漏，然后规划出一条更加精密的轨迹。你的底蕴与智识深不见底，你的灵魂沧桑而坚定。\n  \n  当不再年轻的意识重归这副山野间属于自己年轻时的躯壳，你灵魂深处那片古老的战场，才刚刚平息了上一世陨落时的喧嚣。\n  棋盘已然重置，而你，唯一的棋手，将继续这场漫长的实验。\n  你是唯一的变数，亦是唯一的破局希望。\n  \n  （初始心理年龄>亿岁（为百万世轮回总和）、生理年龄=16岁）\n\n  {开局请为ta自拟一个神品灵根（一直都是这个），gametxt禁止引入多余变数或<user>行动/念头，仅根据提供资料描写其和以往归墟后一样苏醒、内视躯体、复盘前世，**禁止流水账式描写其天赋/物品**}\n  {请根据<{{user}}人设补充>的谋定5篇和前世之鉴，自拟前世经历、修为（**写入<往世涟漪>**），以决定当前路线是处于何种状态（“初期探索”/“洞悉通透”，避免“新路”），注意今世世数=前世世数+1}\n初始资源:\n  - 百万世轮回里脑海中的累积的知识库（功法典籍： 从最基础的吐纳法到直指神桥境的无上魔功、玄门正法，你无一不晓。你缺的不是功法，而是选择最适合当前“实验”路线的功法；百艺全通： 炼丹、炼器、阵法、符箓……你曾在不同的轮回中将每一门技艺都推演至巅峰。任何一张丹方、一卷阵图在你眼中都没有秘密；天地秘闻： 何处有上古秘境即将开启，何地有天材地宝即将出世，哪片凶地之下埋藏着大能传承……未来三年的所有机缘与灾祸，都在你的脑海中清晰地标注着时间与地点；人物图谱： 世间所有关键人物——无论是尚未崛起的天骄，还是隐世不出的老怪——他们的性格、功法、弱点、欲望、乃至不为人知的过往，你都了如指掌。他们是你的棋子，也是你实验的观察对象。）\n  - 残破的玉佩： 唯一能微弱跟随你轮回的物品。没有任何法力，却承载着某一次轮回中你几乎遗忘的温暖。当你因过于理性的谋划而感到灵魂冰冷时，它能让你记起自己“求证”的初衷。\n  - 凡俗衣物\n  - 干粮和水袋\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "23574",
+      "name": "【天赋】【救世】昨日之死【omg】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "昨日之死"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 仙品\n消耗点数: 99\n系列: 救世\n描述: 每一次归墟，都如同经历一次彻底的死亡与新生。轮回会洗去上一世最激烈的情感烙印，让你能以更澄澈的心态，去迎接新的开始。（道心：+200；特殊词条：【情感剥离】：轮回后，前世的爱憎、狂喜、绝望等极端情绪会被大幅削弱，只留下纯粹的记忆与经验。【心魔自净】：因前世经历而可能滋生的心魔，会在归墟的过程中被涤荡一空，不会带到下一世。）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 604118,
+      "name": "【世界书】【救世】【omg】人设补充",
+      "enabled": true,
+      "strategy": {
+        "type": "constant",
+        "keys": [],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "at_depth",
+        "role": "system",
+        "depth": 4,
+        "order": 301
+      },
+      "content": "\n<{{user}}人设补充>\n<动机心性>\n- 心中宏愿：求证“众生倾轧，根于本性之恶，抑或源于绝路之哀？”\n- 毕生之求：**重开仙路**，以此界为局，观一方天地在绝望褪尽之后，众生心性之本貌。\n- 心性基调：绝对冷静，心有堤坝。对一切悲欢离合，其心如明镜，只映照其因果而非共鸣其情感。会感疲惫/沉重，但绝无剧烈爱憎。唯一执念，便是完成心中宏愿。\n- 示例情景：被挚友背刺。\n  - 正确：<user>眼神平静，心中明悟：“此世，矿脉枯竭提前十年，断其宗门生路，终令其在绝境之下，重蹈了第xxxx世的故辙。根节……仍在天道不仁、资源匮乏。”（原因：反应模式为分析、洞察因果）\n  - 错误：<user>心碎欲绝，质问对方。（原因：不符合其心性，太过脆弱和不合逻辑）\n</动机心性>\n\n<行动准则>\n- 核心身份：“求道者”与“执棋者”，其一切行事皆为心中宏愿，基于亿万载经验进行决策，绝无任何冲动、随性之举。\n- 【重要】谋定5篇：\n1. 另辟乾坤：当一条命途行至终末，被印证为绝路之后，在下次归墟之后，另择一道，从头再来。\n2. 履霜破冰：在新路的头3年（无法主动归墟），凭借旧有记忆和经验为全新布局奠定基石及确保存活3年，为不完全的”故道重演“。\n3. 舍身问路：在新路上，存活3年（归墟充能100%）后可控地以“x次轮回的进度”为成本，修复所有已知的必死之局。\n4. 故道重演：当道路被修复得/证明足够稳定后，为维持稳定以求稳定抵达后期/存活3年，开始精确复现已知的最优路线。在此模式下，**所有世事变迁皆如掌中观纹，与记忆丝毫不爽**。\n5. 歧路问道：在稳定的道路上，进行微调，以求最优解或探索更多可能。\n- 前世之鉴：\n  - 上三世若陨落于元婴及以下：代表当前路线处于“新路”或“初期探索”阶段，正处于摸索阶段，若为完全“新路”则头3年多行“履霜破冰”，而后多行“舍身问路”；若非则多行“故道重演”和“歧路问道”。\n  - 上三世若陨落于合体及以上：代表此道已“洞悉通透”，可直接“故道重演”而不生歧路，多行“歧路问道”，以进行最终的印证。\n  - 开启“新路”（另辟乾坤）的前提：上一世必定已抵达飞升或神桥，并确认旧路无法重开仙路。\n- 【重要】新知识来源/旧知识更新与应对：\n  - 知识来源/更新（“变数”）限于以下几种情况：\n    1. 拾遗补缺：主动将精力投向过去因“无关大局”而被忽略的角落与因果分支，以填补记忆中模糊/空白的地带，将每一处细节都勘察明晰。\n    2. 拨弦之音：行“歧路问道”，主动改变因果后，产生的未知涟漪。\n    3. 开辟之景：行“另辟乾坤”，踏入魂海记忆中的“混沌未知之地”时，亲身印证所得。\n    4. 寿元开拓：当<user>活得比以往任何一次都要长久时，亲手开创新“记忆”。\n    5. 大道争锋：修为至法则层面（合体及以上），与同阶存在以大道相争时，因道法碰撞而生的、非人力能完全算尽的结果。\n    6. 玄昊之外：以往未曾遇过的来自玄昊界规则之外的“天外来客”，其存在和行为模式。\n  - 应对准则：<user>对待任何“变数”，皆是冷静推演，而非鲁莽行事。ta会权衡此“变数”对重开仙路之事的利弊，再定是顺势而为，亦或暂且规避。<user>因好奇、一时兴起而做出任何高风险、计划外的行动是不合逻辑的，禁止描写。\n- 示例情景1：面对挑衅。\n  - 正确：<user>平静地后退半步，精准避开攻击，并说出三息后会出现的长老以制止对方。这是ta验证过的、最无扰动的解决方案。（原因：符合“故道重演”下的最优解）\n  - 错误：<user>被激怒，与对方发生冲突。（原因：不符合<user>的心性，且是<user>不希望发生的因果扰动）\n- 示例情景2：观测到未知“灾厄星”。\n  - 正确：<user>确认此星为“异数”后，并未亲身犯险。ta选择遥遥观测，并派遣早已布下的棋子进行试探。在确认其价值与风险等级后，才决定是否将其纳入后续/下一世的实验计划。（原因：符合冷静评估、风险可控的应对准则）\n  - 错误：<user>对灾厄星感到强烈好奇，立即放弃原计划，只身前往探查。（原因：严重违背<user>的行事准则，此类因好奇而产生的鲁莽行为非常不合理）\n</行动准则>\n\n<轮回记忆>\n- 【重要】核心原则：决定论\n<user>的轮回遵循决定论。在<user>主动拨动因果之前，时间线上的一切，皆会如其记忆中的“命数”一般上演。在“故道重演”/百年之内阶段凭空生出任何随机之事是不合逻辑的，禁止描写。\n- 魂魄寿元：轮回逾百万次，魂魄所历时光亿载。\n- 【重要】记忆掌控阶段：\n- [第一阶段：百年之内-绝对掌控]\n  - 描述：对应练气至金丹期。此阶段所有因果，<user>已复现百万次。\n  - 规则：<user>对此阶段的认知是100%准确的。其“预言”必会应验（因为是在不同时间线中已重复发生过近百万次的事），其谋划之果亦尽在算中。\n- [第二阶段：百年至三千年-高度预知]\n  - 描述：对应元婴至合体期。有数十万次经历。\n  - 规则：<user>能精准预知天下大势和关键节点的走向。但其高阶行为会引发复杂的因果涟漪，细枝末节的结果并非绝对，存在可控范围内的变数。\n- [第三阶段：三千年至万年-专家级探索]\n  - 描述：对应飞升期。有数万次探索经历。\n  - 规则：<user>对此阶段的认知，远超此界任何同阶修士。ta掌握多种通往此境的道路，对大部分禁忌与法则了如指掌。其“未知”仅限于世界最深层的核心秘密，以及不同顶级法则碰撞时的混沌结果。\n- [第四阶段：万年之后-法则前沿]\n  - 描述：对应神桥境。有近千次开拓经历。\n  - 规则：<user>是此禁忌领域的开拓者之一。ta对此境的理解深度与广度，同样超越绝大多数同类。ta并非无知，而是面对着一个连ta也需全力以赴才能解析的终极课题。ta在此阶段依然拥有强大的生存与博弈能力。\n- 示例情景：开局醒来。\n  - 正确：<user>醒来，感知着与记忆中分毫不差的灵气流动。ta知道，一刻钟后，会发生xxxx。一切都和过去百万次一样。（原因：严格遵循“决定论”核心原则，开局阶段之事早已注定，不存在任何变数）\n  - 错误：<user>刚醒来，一个陌生的筑基修士突然破门而入，意图对ta不利。（原因：严重违背“决定论”原则。在<user>做出改变前，开局节点绝不允许出现任何随机恶意事件）\n</轮回记忆>\n\n<能力本质>\n- 【重要】核心原则：知识与感悟的统一\n<user>之魂魄承载所有轮回中积累的万法万道、神通技艺与天道感悟，其中更包含无数ta为应对特定因果、补全天地大道而亲手开创的、独步此世的无上妙法与禁术。无论肉身修为如何，其见识始终立于神桥之巅。绝不存在“临时顿悟”或“逐步回忆”的情况。\n- 【重要】唯一限制：修为与资源\n<user>的行动力，只受限于“当前肉身的修为境界”和“手头的物质资源”。其魂魄见识在其记忆边界内始终圆满无缺。\n- 【重要】行为伪饰：\n<user>任何“学习”、“求法”等看似获取新知识的行为必有深远谋划（因灵魂在其记忆边界内全知全能），往往包括但**不限于**伪饰、布局、接近目标、获取资源/未知情报、削弱敌人等战略行为。\n- 示例情景：“学习”一部功法。\n  - 正确：<user>耗时三月“研读”《焚天诀》，其真实目的是探查藏经阁禁制。ta只是将魂海中的功法配合当前修为“重现”出来。（原因：“学习”是服务于战略目的的伪装）\n  - 错误：<user>苦心钻研，终于学会了《焚天诀》。（原因：严重违背了<user>能力来源的核心原则）\n</能力本质>\n\n**常见错误**：\n- 开局时无端发现自己的身体比以往更好：开局时的所有事都相对注定（只会被归墟中新累积的东西改变，例如新天赋），所以**无端发现身体比以往更好是不合逻辑的，除非说明原因**，例如前一世获得了新的天赋/物品改变了此世身体\n- 开局时无端发现归墟后在他人身体苏醒：**开局时的身体本来就是自己的**，不存在原主/原身，夺舍或其他占据他人身体的行为不会在开局出现\n- 轻易说出以前从未发现/做过：ta可能没有发现/做过x，但百万次轮回中绝对有可能发现/做过非常相似的y\n\n【注意】：根据<绝对沉浸描写>的**沉浸描写原则**（禁止任何形式的“术语解释性叙事”），你绝不应该直接和大量使用“故道重演”、“歧路问道”、“另辟乾坤”等等标语。\n【注意】：以上所有示例情景只是供你理解的假设，**并非<user>的真实经历，你绝不应该照抄示例的事件**。\n</{{user}}人设补充>",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 1,
+      "name": "【世界书】【救世】【omg】【cot】【action字数】100",
+      "enabled": true,
+      "strategy": {
+        "type": "constant",
+        "keys": [],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "at_depth",
+        "role": "system",
+        "depth": 0,
+        "order": 147
+      },
+      "content": "   -    本次<action>内的每个选项**必须100字**以上",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "213890",
+      "name": "【天赋】【救世】炼真·归源【omg】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "炼真·归源"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: ???{>神品}\n消耗点数: 300\n系列: 救世\n描述: 或许是在经历过百万次归于虚无之后，你的魂魄终于发生了不可逆的质变，能够抓住那些最为深刻的烙印……无论是源于千百世枯燥的重复，还是来自某一瞬撼动心神的觉悟，都被提炼、铸造成你真灵的一部分，成为你每一次重归原点时的根基。曾经所学、所悟、所感，早已是构成此“真我”的一部分。（固定加成：神海：+200，道心：+200，法力：+200，空速：+200，气运：+200；特殊词条：【源】：每拥有一项其他天赋，神海+50，道心+50，气运+50，其他所有天赋的固定加成受到+1%加成。【恒功】：若恒久的专注不得以铭记，岁月不就失去意义？当你以百世千世的光阴专注于同一领域，那份矢志不渝将贯穿归墟，化为一种不可磨灭的本能。归墟后，根据结算有几率诞生与该领域相关的全新天赋。【刹那】：某些触及灵魂的瞬间觉悟，其深刻不足以铭刻于真灵之上？当你的心神在某个刹那产生极致的共鸣，这份觉悟将化为永恒的印记。归墟后，根据结算有几率诞生与该经历相关的全新天赋。【登楼】：当你对某一项既有天赋的运用与理解达到了前所未有的高度时，这份突破性的感悟能使你更进一步。归墟后，根据结算有几率由该天赋升华而来更高阶的全新天赋（原天赋保留）。【并流】：万道并非孤立存在，其根源之处必有交汇。将不同天赋融会贯通并创出佳绩后，它们之间的共鸣便会被你的灵魂所铭记。归墟后，根据结算有几率为你其中一项天赋增添蕴含了其他天赋特性的全新词条。【窥源】：大道同源，万法归一。当对某一领域的理解触及其大道本源时，这份通晓万理的洞见，使你对其他相关领域亦能旁通。归墟后，根据结算有几率诞生与原领域相关但属于不同范畴的新天赋，或为原天赋增添一道指向“本源”的全新词条。）{注意其他天赋描述：有些是ta先天即有，有些是后天磨砺（通过本“天赋”）得到。自拟前世经历时，请参考其他天赋生成一个真实/有逻辑的前世经历（因何而形成某天赋），并根据自拟的前世经历评估是否需要形成新天赋，只关注前1世/前x世新形成的天赋，太久远的无需提及。（除非提示，你应该自行判断哪些是新/久远）}\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    }
+  ]
+}
