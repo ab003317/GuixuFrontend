@@ -1,0 +1,1877 @@
+{
+  "type": "GuixuSeriesPackage",
+  "version": "2.5",
+  "author": "白小咕",
+  "series": "六欲天",
+  "exportTime": "2025-10-12T11:34:19.648Z",
+  "entries": [
+    {
+      "uid": 360316,
+      "name": "【预设】【六欲天】六欲天【白小咕】",
+      "enabled": true,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "六欲天"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 300
+      },
+      "content": "点数: 300\n系列: 六欲天\n描述: \n属性分配:\n  fa_li: 19\n  shen_hai: 19\n  dao_xin: 19\n  kong_su: 19\n  qi_yun: 10\n必选天赋:\n可选天赋:\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 5,
+      "name": "【世界书】【六欲天】【白小咕】六欲天",
+      "enabled": true,
+      "strategy": {
+        "type": "constant",
+        "keys": [
+          "六欲天"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 0,
+        "order": 10
+      },
+      "content": "<六欲天>\n这是一个游离于仙道十宗之外，隐匿于世间阴影中的神秘宗门。当仙路断绝，正道修士们在无望的飞升中苦苦挣扎时，另一条崎岖而禁忌的道路悄然开启。\n\n“六欲天”，一个将世间最原始、最强烈的生命冲动——情欲，炼化为无上力量的组织。他们不敬天地，不拜鬼神，只信奉欲望本身即是通往永恒的唯一阶梯。其门人遍布九州，身份各异，或为名门弟子，或为市井走卒，但他们都以追求极致的欲望为唯一道途。\n\n“六欲天”内部分为六大派系，彼此既有合作，亦有竞争。每一重天都代表着一种极致的情欲形态，由一位被称为“天主”的女性领袖执掌。\n\n---\n\n### **第一重天：苦轮天 (Flesh Modification)**\n\n*   **天主**：千机夫人\n*   **道途**：以肉身为舟，渡苦厄欲海。苦轮天的修士信奉凡俗的肉体是束缚欲望的牢笼，唯有通过极致的改造，才能创造出承载无尽欢愉的完美道躯。她们的修行过程充满了血腥的仪式感。修士们会在布满精密符文的炼成台上，被机关巧手用淬炼过的法宝刀具，一寸寸切割、重塑自己的身体。增生额外的性器、嫁接妖兽的敏感器官、将皮肉换成能传导更剧烈快感的灵化金属、在体内植入能持续分泌媚药的蛊虫……每一次改造都伴随着凡人无法想象的剧痛，而正是这痛与欲的剧烈交织，催生出她们狂暴而纯粹的力量。\n*   **特征**：苦轮天的修士外表往往异于常人，呈现出一种怪诞而妖异的美感。她们的身体是艺术品，也是最致命的武器。她们享受着常人无法理解的快感，也承受着永不休止的肉体折磨。其战斗方式直接而残忍，能从被改造的身体部位瞬间爆发出毁灭性的力量，或用那些怪异的器官带给敌人极致的感官地狱。\n\n---\n\n### **第二重天：孽慢天 (Taboo Transgression)**\n\n*   **天主**：血莲圣母\n*   **道途**：人伦为锁，悖德为钥。孽慢天的修士认为，情欲最强大的力量，源自于对禁忌的践踏。她们将目光投向了血脉相连的人伦纲常，在父女、母子、兄妹、姐弟之间播撒欲望的种子。每一次成功的引诱，每一次在世俗道德谴纯洁荡然无存的眼神，都是她们力量的源泉。她们建立起一个个看似和睦，实则内部关系混乱不堪的“家族”，在其中扮演着母亲、女儿、姐妹等多重角色，享受着玩弄人伦于股掌之上的傲慢与愉悦。\n*   **特征**：孽慢天的修士通常外表圣洁，言谈举止温文尔雅，极具欺骗性。她们精通媚术与精神诱导，能轻易击溃一个人的道心防线。她们的力量并非直接的破坏，而是一种更深层次的污染与腐化，能让对手在情欲的幻象中道心崩溃，沦为她们的禁脔。\n\n---\n\n### **第三重天：无间天 (Sadomasochism)**\n\n*   **天主**：刑乐女王\n*   **道途**：施虐为阳，受虐为阴，阴阳合一，极乐无间。无间天的修士将痛苦与羞辱视为通往极乐的必经之路。此天分为“刑主”与“受奴”两派。“刑主”以施加痛苦为乐，她们精通各种能最大化痛苦而不致命的酷刑法术和器具，从鞭挞、穿刺、束缚中汲取对方精神崩溃瞬间的愉悦能量。“受奴”则以承受痛苦和羞辱为修行，她们追求在极致的折磨中，精神超脱肉体，将痛感转化为纯粹的能量洪流。两派修士时常进行被称为“受乐大典”的仪式，在公开或私密的场合进行极致的施虐与受虐，直至一方或多方在痛苦的巅峰迎来高潮，产生的庞大精神能量将被仪式核心吸收。\n*   **特征**：无间天的修士意志力极为坚韧，道心稳固得可怕。她们的身体上往往布满了各种伤痕、烙印与穿刺，但这些在她们眼中并非丑陋，而是荣耀的勋章。她们的力量坚韧而绵长，极难被摧毁，同时她们也擅长各种带来痛苦的诅咒与攻击，让敌人在无尽的折磨中死去。\n\n---\n\n### **第四重天：畜生天 (Bestiality)**\n\n*   **天主**：万兽妖后\n*   **道途**：舍弃人形，回归兽性，于最原始的交媾中寻得大力。畜生天的修士鄙夷人类文明的虚伪，她们认为妖兽身上那股不加掩饰的、纯粹的生命力与性欲，才是力量的本源。她们在九州各处建立“万兽淫巢”，捕获或圈养各类强大的妖兽，尤其是那些以淫欲著称的异种。她们通过秘法与妖兽交媾，在被巨大兽躯侵犯、撕咬、占有的过程中，用自身的元阴去汲取妖兽的精元与魂魄，将那股狂野的力量化为己用。这是一个极其危险的道途，稍有不慎，便会被妖兽的兽性同化，彻底沦为只知交配的雌兽，或是直接被狂暴的妖兽撕成碎片。\n*   - **特征**：畜生天的修士身上往往带有一些兽类的特征，如竖瞳、利爪或毛茸茸的耳朵。她们的力量充满了野性与爆发力，肉身强横无比，并且能与妖兽进行简单的精神沟通，甚至能短暂控制低阶妖兽。\n\n---\n\n### **第五重天：胎藏天 (Breeding & Pregnancy)**\n\n*   **天主**：孕海神妃\n*   **道途**：以身为炉，孕化万物，生死轮回，皆在一念。胎藏天的修士将“孕育”本身视为宇宙间最伟大的力量。她们追求的不是单纯的交合之乐，而是“受孕”那一刻的生命源力，以及“分娩”那一瞬间的创世与毁灭之力。她们会主动寻找血脉强大的修士、妖王甚至异魔作为交合对象，用特有的“纳精秘法”将精元封存于体内，再用自身血肉与法力作为温床，孕育出各种光怪陆离的“道胎”。这些道胎可能是拥有强大力量的子嗣，也可能只是纯粹的能量结晶，甚至是畸形的血肉魔物。在分娩时，她们会举行“裂界之仪”，将生产的剧痛与新生命诞生的能量瞬间引爆，化为己用。更有甚者，会在道胎成型后将其强行打碎，直接吸收其全部生命精华，这种行为被称为“食子证道”，极为血腥残忍。\n*   **特征**：胎藏天的修士，尤其是高阶者，常常处于一种诡异的怀孕状态，小腹隆起，散发着强大的生命气息与不祥的魔气。她们精通生命与血肉法术，既能催生万物，也能散播最恶毒的瘟疫与血咒。她们的恢复能力极强，只要子宫尚在，便几乎不死不灭。\n\n---\n\n### **第六重天：欢喜天 (Group Sex & Orgies)**\n\n*   **天主**：合欢仙子\n*   **道途**：独乐不若众乐，集万千欲念，成我一人之道。欢喜天的修士是情欲的织网者与收集者。她们认为个体的欲望终究有限，唯有将无数人的欲望汇聚成河，才能掀起滔天巨浪。她们在凡间与修仙界开设“极乐楼”，或是举办名为“无遮大会”的盛大淫乱派对，吸引或掳掠大量凡人、修士参与其中。通过特殊的阵法“欲海销魂阵”，将场内所有人交合时产生的欲望、精气、乃至生命力都抽取出来，汇聚到阵法中心的“欢喜天”修士身上。处于阵法中心的修士，如同一只贪婪的蜘蛛，享受着万千猎物挣扎时带来的饕餮盛宴。\n*   **特征**：欢喜天的修士魅力惊人，一颦一笑都能勾魂夺魄。她们本身实力或许不是六天中最强的，但她们最擅长借力打力，能够通过阵法调动远超自身极限的庞大能量。她们的法术也多与群体控制和能量吸收有关，一旦让她们布下阵法，便能立于不败之地。\n</六欲天>",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": true,
+        "prevent_outgoing": true,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": null,
+      "name": "【世界书】【六欲天】【白小咕】六欲天的组织架构与晋升",
+      "enabled": true,
+      "strategy": {
+        "type": "constant",
+        "keys": [],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 0,
+        "order": 11
+      },
+      "content": "“欲力”是六欲天修士将情欲、生命精华、精神能量通过各自道途转化而来的特殊灵力。它既是修为的体现，也是地位的象征。\n\n---\n\n### **一、 核心组织架构**\n\n六欲天的权力结构呈金字塔形，但顶端并非一人独裁，而是一个动态制衡的议会。\n\n1.  **六天议会 (The Council of Six Heavens)**\n    *   **构成**：由六位“天主”——千机夫人、血莲圣母、刑乐女王、万兽妖后、孕海神妃、合欢仙子——共同组成，是六欲天的最高决策机构。\n    *   **权力**：决定组织的大方向、资源分配、对外战争与盟约等重大事宜。\n    *   **主宰 (The Sovereign)**：议会中并无固定领袖。当前“欲力”储备最雄厚、或对组织做出最大贡献的“天主”，将临时获得“主宰”之位，拥有对议会决议的一票否决权，并能优先调动组织的公共资源。此位置的争夺是六天之间永恒的暗流。\n\n2.  **天主 (Heavenly Matriarch)**\n    *   六大派系的绝对领袖，拥有对其“天”内所有成员生杀予夺的大权。她们是各自道途的终极体现者，实力深不可测。\n\n3.  **欲主 (Desire Lord/Master)**\n    *   天主之下的最高阶层，每个“天”仅有三至五位。她们是天主的副手、继承人候选，以及具体事务的执行者。欲主通常负责管理一片区域或一个重要的“生产基地”（如改造工坊、淫巢、祭坛）。\n\n4.  **欲使 (Desire Emissary)**\n    *   组织的中坚力量，拥有独立行动的资格。她们被派往九州各地，建立新的据点、执行暗杀、引诱天才、或管理次级项目。欲使是六欲天对外形象的代表，通常实力已达金丹或元婴期。\n\n5.  **欲徒 (Desire Disciple)**\n    *   正式成员，已经掌握了本派系转化“欲力”的基础法门，并开始为组织贡献自己的力量。他们是数量最多的群体，也是竞争最激烈、死亡率最高的阶层。\n\n6.  **欲奴 (Desire Slave)**\n    *   入门级别，包括被掳掠来的鼎炉、自愿投入的凡人、以及刚入门的低阶修士。他们尚未掌握转化“欲力”的法门，本身就是被消耗的“资源”或正在接受残酷训练的“预备役”。绝大部分欲奴会在这个阶段被榨干或淘汰。\n\n### **二、 共通职能部门**\n\n除了各天的垂直管理，六欲天还设有几个跨派系的职能部门，由各天的“欲主”或“欲使”共同管辖，争权夺利十分常见。\n\n*   **引渡司**：负责在九州各地搜寻、筛选和“引渡”有潜力的新人或优质“材料”。他们是伪装大师和心理操纵专家。\n*   **戒律院**：组织的内部执法者，由【无间天】主导。负责惩处叛徒、失败者以及违反六欲天根本利益的成员。他们的手段极其残酷，是所有成员的梦魇。\n*   **万物堂**：后勤与资源管理部门。负责管理和分配各类修行“材料”，包括但不限于：被掳掠的修士与凡人、圈养的妖兽、用于改造的灵金异铁、各类毒药媚药、以及从外部交易来的天材地宝。\n\n---\n\n### **三、 各天晋升制度**\n\n晋升的核心标准只有一个：**你能否更高效地创造、汲取和承受“欲力”**。\n\n#### **第一重天：苦轮天 (Flesh Modification)**\n*   **欲奴 → 欲徒**：**【受肉洗礼】**。欲奴被送上炼成台，由高阶修士对其进行第一次强制改造。内容随机，可能是加装额外的敏感触手，也可能是切开皮肤植入传导力更强的金属神经。活下来，并能在改造后的剧痛中感受到第一丝快感的，方可晋升。\n*   **欲徒 → 欲使**：**【道躯塑成】**。在之后的修行中，主动接受至少五次重大改造，并能将这些改造完美融合，形成自己独特的战斗/欢愉形态。晋升仪式上，需展示其改造后肉体的强大力量与极致感官，通常是在一场血腥的角斗或公开的自慰仪式中进行。\n*   **欲使 → 欲主**：**【开创杰作】**。需向天主提交一份全新的、前所未有的肉体改造方案，并以自身或一名指定的欲奴为材料，成功实现该改造。此“杰作”必须能显著提升“欲力”的转化效率或创造出全新的感官体验。例如，设计出能与法宝融合的血肉接口，或能通过自残瞬间爆发出三倍力量的自毁器官。\n\n#### **第二重天：孽慢天 (Taboo Transgression)**\n*   **欲奴 → 欲徒**：**【破戒初啼】**。成功引诱一名与其有直接血缘或师徒、养育等紧密人伦关系的目标，并与之发生性关系。需呈上带有对方血脉气息的“交欢信物”作为凭证。\n*   **欲徒 → 欲使**：**【筑巢引凤】**。以自身为中心，成功构建一个至少包含三名核心成员的“孽缘家族”，并在此家族内部形成稳定、持续的乱伦关系网。晋升考核会评估此“孽巢”产出的“欲力”总量与稳定性。\n*   **欲使 → 欲主**：**【污名圣所】**。策划并导致一个在正道中享有盛誉的修仙世家或宗门高层，因乱伦丑闻而彻底覆灭、名誉扫地。这桩丑闻在修仙界引发的震动与道德冲击所产生的庞大精神能量，将被其吸收，作为晋升的最终资粮。\n\n#### **第三重天：无间天 (Sadomasochism)**\n*   **欲奴 → 欲徒**：**【拷问心关】**。作为受方，需在连续七天不间断的酷刑（鞭挞、针刺、火烙）中保持意识清醒，并体验到高潮。作为施方，需将一名同阶修士折磨至精神崩溃，并采集其崩溃瞬间散发出的精神能量。\n*   **欲徒 → 欲使**：**【苦乐道成】**。需掌握至少一门完整的“刑罚体系”，如“血肉剥离之乐”或“神魂碾磨之趣”。晋升仪式要求其公开表演，将一名元婴期修士用自己的“刑罚体系”折磨至死，并保证其在死亡前经历了至少三次痛苦高潮。\n*   **欲使 → 欲主**：**【登神长阶】**。作为施方，需创造出一种全新的、能作用于神魂层面的酷刑，并得到刑乐女王的认可。作为受方，则需主动挑战“无间炼狱”，那是刑乐女王亲自设下的、据说无人能活着走出的极致痛苦试炼。\n\n#### **第四重天：畜生天 (Bestiality)**\n*   **欲奴 → 欲徒**：**【兽血初拥】**。被扔进关押着数只发情低阶妖兽的兽栏中，存活一夜。只有那些能利用身体安抚妖兽，并在交媾中活下来的人，才有资格晋升。\n*   **欲徒 → 欲使**：**【本命兽婚】**。进入“万兽山”，寻找并“征服”一只强大的、拥有上古血脉的妖兽作为自己的“道侣”。这种征服并非通过战斗，而是通过性。需与之建立牢固的精神与肉体连接，能随时引动其力量为己用。\n*   **欲使 → 欲主**：**【化兽归源】**。通过与复数的高阶妖兽王交合，汲取它们的本源精血，导致自身肉体发生“返祖”级别的兽化，获得一项该妖兽种族最强大的天赋神通。或者，与自己的“本命道侣”诞下一枚拥有双方血脉的“混血妖丹”，并将其吞噬。\n\n#### **第五重天：胎藏天 (Breeding & Pregnancy)**\n*   **欲奴 → 欲徒**：**【受孕之种】**。接受组织安排的、来自强大修士或妖兽的强制授精。在为期三个月的“育胎期”后，于“催产大典”上被活体剖腹，取出未成形的血肉胎盘作为祭品。能在此过程中存活并恢复的，方可晋升。\n*   **欲徒 → 欲使**：**【定向孕育】**。主动外出寻找强大的生灵作为目标，使用秘法盗取其精元，并成功孕育出具有特定属性（如火系、剑体）的“道胎”。在分娩时，需自行完成“裂界之仪”，将道胎的生命能量大部分转化为自身修为。\n*   **欲使 → 欲主**：**【食子证道】**。此为最禁忌的仪式。需孕育一个与自己血脉、神魂高度契合的“本我之胎”，在其即将足月、生命力最旺盛的时刻，布下大阵，将其活生生从子宫中剥离，当场炼化。成功者，修为将迎来爆炸性增长，失败者则会被胎儿反噬，化为一滩血水。\n\n#### **第六重天：欢喜天 (Group Sex & Orgies)**\n*   **欲奴 → 欲徒**：**【欲海浮沉】**。作为“无遮大会”中最底层的参与者，任务是在被上百人轮番交合的过程中，守住一丝灵台清明，学习感知“欲力”的流动，并存活下来。\n*   **欲徒 → 欲使**：**【掌灯之人】**。独立策划并主持一场至少百人规模的淫乱集会。需懂得如何挑选“祭品”、布置基础的“销魂阵”、并在不闹出人命的情况下，最大限度地榨取参与者的精气与欲念，完成组织下达的“欲力”收集指标。\n*   **欲使 → 欲主**：**【万欲归流】**。潜入一个大型城市或中等宗门，通过媚术、丹药、心计，在内部掀起一场席卷上万人的情欲狂潮，并暗中布下“天罗欲网大阵”，将整座城或整个宗门的欲望洪流导向自身。此举极为凶险，但一旦成功，其收获的“欲力”足以让其修为连破数个境界。\n\n---\n\n总而言之，在六欲天，晋升之路即是一条不断突破下限、将自己与他人都化为欲望燃料的血腥之路。这里没有同门情谊，只有相互利用的“道友”和随时可以被踩在脚下的“阶梯”。",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": true,
+        "prevent_outgoing": true,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 14,
+      "name": "【世界书】【六欲天】【白小咕】六欲天功法",
+      "enabled": true,
+      "strategy": {
+        "type": "constant",
+        "keys": [],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 0,
+        "order": 12
+      },
+      "content": "### **总纲心法：《大自在天欲化神经》**\n\n此为六欲天所有功法的总纲与源头，并非一部具体的修炼法门，而是一种转化“欲力”的根本法则。它阐述了如何将情欲的波动——无论是自身的、他人的、痛苦的、狂喜的、扭曲的、纯粹的——捕捉、提纯，并转化为能被修士直接吸收、驱动法术、提升境界的根本能量。\n\n六天的功法，皆是此总纲在不同方向上的极致演绎。\n\n---\n\n### **第一重天：苦轮天 · 功法**\n\n*   **根本功法：《万劫不坏欢喜身》**\n    此功法将肉身视为一件活着的法宝，通过不断的破坏、改造与重塑，使其能承受并转化世间最极致的痛苦与欢愉。修炼者需以自身血肉为祭品，忍受常人无法想象的酷刑，在每一次濒临崩溃的边缘，将痛觉神经传来的信号强制转化为精纯的“欲力”，用以滋养和强化改造后的躯体。\n    *   **修行特征**：修炼过程即是自残过程。修士会用淬毒的刀刃切割自己的皮肤，用烧红的烙铁在身上印下符文，用灵力钻头在骨骼上雕刻阵法。每一次改造，都是一次“劫难”，渡过之后，肉身便会更加“不坏”，对快感的感知也会敏锐百倍。\n\n*   **衍生神通**：\n    *   **《血肉殖装》**：主动技能。可将妖兽的器官、灵化的金属、甚至其他修士的肢体，通过血腥的嫁接仪式“安装”到自己身上。例如，将章鱼妖的触手嫁接到后背，获得额外的攻击手段与敏感带；将螳螂妖的骨刃植入前臂，化为致命武器。\n    - **《痛感升华》**：被动技能。战斗中受到的任何物理伤害，其痛感都会被此功法部分转化为“欲力”，并在短时间内提升修士的攻击力与速度。伤得越重，战意越高，力量越强。\n    *   **《极乐崩解》**：禁忌杀招。引爆体内一处或多处改造器官，将其蕴含的全部“欲力”与血肉精华在瞬间化为毁灭性的能量冲击。此招威力巨大，但使用后该部位会彻底损毁，需重新进行更痛苦的改造才能恢复。\n\n---\n\n### **第二重天：孽慢天 · 功法**\n\n*   **根本功法：《逆伦转业度化经》**\n    一部专注于精神污染与道心腐化的魔经。其核心不在于提升自身，而在于“度化”他人。通过引诱与自己有紧密人伦关联（血亲、师徒等）的目标堕落，从其道心破碎、伦理观崩塌的瞬间，攫取最为庞大和扭曲的精神能量。每成功“度化”一人，自身的神魂便会得到一次“业力”的洗礼，变得更加坚韧、妖异。\n\n*   **衍生神通**：\n    *   **《情丝缠心咒》**：精神秘术。能悄无声息地在目标心中种下一颗欲望的种子，以其血脉或情感羁绊为养料，逐渐生根发芽，使其对施术者产生不正常的、超越伦理的爱恋与占有欲。\n    *   **《血脉共鸣》**：辅助秘术。在与有血缘关系的目标交合时，可通过此术引动血脉深处的共鸣，极大地增强双方的快感，并加速汲取对方的气运与修为。\n    *   **《道毁神夺》**：精神杀招。当目标因乱伦而道心彻底崩溃时，可以此术瞬间侵入其识海，将其混乱破碎的元神连同毕生修为彻底吞噬，化为最精纯的养料。\n\n---\n\n### **第三重天：无间天 · 功法**\n\n*   **根本功法：《两极苦乐心印》**\n    此功法一体两面，分为“刑主”修行的《惩戒之章》与“受奴”修行的《奉献之章》。两者相辅相成，共同构筑了无间天的力量体系。\n    *   **《惩戒之章》**：专注于如何施加最有效、最持久的痛苦。修炼者需精研人体脉络、神魂结构，务求每一击都能带来最大的痛楚，并从受刑者的尖叫、哭泣、求饶中汲取精神能量。\n    *   **《奉献之章》**：专注于如何承受、品味并转化痛苦。修炼者通过挑战自身极限，在被施虐的过程中，将肉体与精神的痛苦剥离，并将其升华为纯粹的能量与狂喜。\n\n*   **衍生神通**：\n    *   **《神魂鞭挞》（刑主）**：无需物理接触，直接用神念凝成一条布满倒钩的能量长鞭，抽打在目标的元神之上，带来远超肉体之痛的剧烈折磨。\n    *   **《百创不死身》（受奴）**：被动技能。将受到的部分伤害转化为生命力，只要施加在身上的痛苦不停止，自身的恢复速度就会不断加快，达到一种越被打越强的诡异状态。\n    *   **《羞辱灵域》（通用）**：展开一个领域，强行将领域内所有敌人的内心深处最羞耻、最不堪的记忆公之于众，化为幻象反复播放。从敌人产生的巨大羞耻、愤怒、恐惧中汲取海量的“欲力”。\n\n---\n\n### **第四重天：畜生天 · 功法**\n\n*   **根本功法：《太古兽神合体诀》**\n    一部追求返祖归源，与天地间最狂野的兽性融合的功法。修炼者通过与妖兽交合，不仅仅是满足欲望，更是要通过最原始的体液交换与神魂碰撞，汲取妖兽血脉中沉淀了万年的太古之力与生存本能。\n\n*   **衍生神通**：\n    *   **《万兽来朝》**：散发一种特殊的、模仿顶级掠食者发情期的信息素，能够吸引、安抚甚至命令比自己等阶低的妖兽，让它们将自己视为配偶或女王。\n    *   **《精血掠夺》**：在与妖兽交合时，通过子宫的特殊收缩法门，强行将妖兽的精元甚至本命精血吸入体内，直接炼化为自身修为。此法极为霸道，常导致被吸干的妖兽当场暴毙。\n    *   **《法天象地·兽形》**：将吸收的妖兽本源之力与自身融合，可在战斗中显化出该妖兽的某些特征，如麒麟的鳞甲、天狐的幻术、真龙的巨力，实力暴涨。修炼至深处，甚至能完全化为一头上古凶兽。\n\n---\n\n### **第五重天：胎藏天 · 功法**\n\n*   **根本功法：《血海慈航种魔胎》**\n    将自身子宫视为天地洪炉，以万物精元为炭火，以自身血肉为鼎器，孕育“道胎”的禁忌法门。此功法认为，从“无”到“有”的创生过程，以及从“有”到“无”的毁灭过程，蕴含着宇宙最本源的力量。\n\n*   **衍生神通**：\n    *   **《纳精种魔》**：通过交合或特殊法器，盗取目标（修士、妖王）的精元，并将其封印于子宫内，作为孕育“道胎”的“种子”。可同时封印多种精元，孕育出拥有不同特性的混血魔胎。\n    *   **《裂界分娩》**：在分娩的瞬间，将生产的剧痛、新生命的诞生之力、以及自身与胎儿的血脉联系三者合一，引动一次小范围的空间坍塌或能量爆炸。既是生产，也是最强一击。\n    *   **《血婴咒杀》（R18G）**：一种极其恶毒的诅咒。强行将体内未足月的道胎打碎，取其尚在温热的血肉与残魂为媒介，对“种子”的提供者或其血亲施以最恶毒的血脉诅咒。此咒无形无相，中者会逐渐血肉枯萎，神魂腐烂，在无尽的痛苦中化为一滩脓水。\n\n---\n\n### **第六重天：欢喜天 · 功法**\n\n*   **根本功法：《大欲天罗万象功》**\n    一部以阵法为核心，撬动群体欲望的功法。修炼者本身如同一张大网的中心，通过布置各种淫乱的“场”，将所有参与者的欲望、精气、生命力汇聚于己身。此功法的强弱，几乎完全取决于修炼者能同时引动和承受多大规模的欲望洪流。\n\n*   **衍生神通**：\n    *   **《欲海销魂阵》**：核心阵法。可在酒楼、宫殿乃至整个城市布下。阵法一旦启动，会放大范围内所有生灵的性欲，并将其交合时散发的能量源源不断地输送给阵眼的主持者。\n    *   **《他化自在天魔舞》**：一种带有强烈精神暗示的舞蹈。舞姿极尽魅惑，能让观看者迅速陷入情欲的幻觉，心甘情愿地加入“无遮大会”，成为被榨取的祭品。\n    *   **《红尘业火》**：将吸收来的、庞大驳杂的群体欲望，通过秘法点燃，化为一种能直接灼烧神魂的暗红色火焰。此火焰由万千生灵的欲念构成，污秽不堪，一旦沾上，极难扑灭，直至将对方的道心和元神烧成灰烬。",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": true,
+        "prevent_outgoing": true,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "115229",
+      "name": "【天赋】【六欲天】亲族好感【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "亲族好感"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 凡品\n消耗点数: 5\n系列: 六欲天\n描述: |\n  你的气息让与你有血缘关系的人感到莫名的亲切，他们对你的戒心会不自觉地降低一点。\n  （气运+2）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "70731",
+      "name": "【天赋】【六欲天】坚韧皮肤【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "坚韧皮肤"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 凡品\n消耗点数: 5\n系列: 六欲天\n描述: |\n  你的皮肤比常人更坚韧一些，能更好地承受轻微的刮擦与刺痛。\n  （道心+3）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "745294",
+      "name": "【天赋】【六欲天】人多来劲【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "人多来劲"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 凡品\n消耗点数: 5\n系列: 六欲天\n描述: |\n  在人群拥挤的地方，你非但不会感到烦躁，反而精神会略微振奋。\n  （法力+2）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "357563",
+      "name": "【天赋】【六欲天】兽类亲和【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "兽类亲和"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 凡品\n消耗点数: 5\n系列: 六欲天\n描述: |\n  寻常的家畜或低阶妖兽，在你面前会表现得更加温顺。\n  （神海+2）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "952876",
+      "name": "【天赋】【六欲天】敏感体质【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "敏感体质"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 凡品\n消耗点数: 5\n系列: 六欲天\n描述: |\n  你的神经末梢比常人更敏感，无论是痛苦还是快乐，感受都更为鲜明。\n  （道心+1, 神海+1）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "647434",
+      "name": "【天赋】【六欲天】愈合美学【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "愈合美学"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 下品\n消耗点数: 10\n系列: 六欲天\n描述: |\n  你的伤口在愈合后，会形成别具一格的、略微凸起的疤痕，有一种病态的美感。\n  （道心+8, 空速+2）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "54027",
+      "name": "【天赋】【六欲天】长辈缘【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "长辈缘"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 下品\n消耗点数: 10\n系列: 六欲天\n描述: |\n  你的言行举止总是能轻易获得长辈的怜爱与信任，即便你心怀鬼胎。\n  （神海+5, 气运+5）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "959246",
+      "name": "【天赋】【六欲天】嗜虐之心【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "嗜虐之心"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 下品\n消耗点数: 10\n系列: 六欲天\n描述: |\n  目睹或亲手施加的血腥与痛苦，会让你产生一丝精神上的愉悦。\n  （神海+10）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "913860",
+      "name": "【天赋】【六欲天】兽欲感知【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "兽欲感知"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 下品\n消耗点数: 10\n系列: 六欲天\n描述: |\n  你能模糊地感知到附近妖兽是否处于发情期。\n  （神海+8, 法力+2）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "70718",
+      "name": "【天赋】【六欲天】易孕体【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "易孕体"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 下品\n消耗点数: 10\n系列: 六欲天\n描述: |\n  你的身体比常人更容易受孕。\n  （道心+10）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "362023",
+      "name": "【天赋】【六欲天】痛觉转化【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "痛觉转化"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 中品\n消耗点数: 15\n系列: 六欲天\n描述: |\n  当你承受中等程度的物理伤害时，其中一小部分痛感会被身体强制转化为微量的法力。\n  （道心+15, 法力+5）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "21625",
+      "name": "【天赋】【六欲天】伦理嗅觉【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "伦理嗅觉"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 中品\n消耗点数: 15\n系列: 六欲天\n描述: |\n  你天生就能敏锐地察觉到一个家族或师门中最薄弱、最容易被欲望腐蚀的人伦关系。\n  （神海+20）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "860825",
+      "name": "【天赋】【六欲天】兽性共鸣【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "兽性共鸣"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 中品\n消耗点数: 15\n系列: 六欲天\n描述: |\n  你身上散发的独特信息素，能安抚狂躁的低阶妖兽，并让它们将你视为同类。\n  （法力+10, 神海+10）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "651402",
+      "name": "【天赋】【六欲天】胎息汲取【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "胎息汲取"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 中品\n消耗点数: 15\n系列: 六欲天\n描述: |\n  你能从身边的孕妇或怀胎的雌性生物身上，缓慢地汲取一丝生命能量以补充自身。\n  （法力+20）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "619560",
+      "name": "【天赋】【六欲天】靡靡之音【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "靡靡之音"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 中品\n消耗点数: 15\n系列: 六欲天\n描述: |\n  你的声音中带有一种奇特的魔力，在讲述与情欲相关的话题时，能轻易让听众脸红心跳。\n  （神海+18, 气运+2）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": "688431",
+      "name": "【天赋】【六欲天】羞耻力场【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "羞耻力场"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 上品\n消耗点数: 25\n系列: 六欲天\n描述: |\n  你可以主动散发一道无形力场，让意志不坚的敌人在力场内感到强烈的自我羞耻与难堪，从而道心不稳，战力下降。\n  （神海+50）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 77849,
+      "name": "【天赋】【六欲天】欲望之触【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "欲望之触"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 上品\n消耗点数: 25\n系列: 六欲天\n描述: |\n  你的每一次物理接触，都能在目标体内种下一颗微小的欲望火种，若不及时清除，会逐渐放大其内心深处的性欲。\n  （神海+30, 法力+20）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 340175,
+      "name": "【天赋】【六欲天】血肉苗床【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "血肉苗床"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 上品\n消耗点数: 25\n系列: 六欲天\n描述: |\n  你的子宫环境异于常人，如同一块肥沃的灵田，能极大提升“道胎”的存活率与成长速度。\n  （道心+40, 法力+10）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 7310,
+      "name": "【天赋】【六欲天】兽血融合【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "兽血融合"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 上品\n消耗点数: 25\n系列: 六欲天\n描述: |\n  在与妖兽交合的过程中，你能更高效地吸收其精血中蕴含的体能与气力，并暂时强化自身肉体。\n  （法力+25, 空速+25）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 263355,
+      "name": "【天赋】【六欲天】痛感调频【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "痛感调频"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 上品\n消耗点数: 25\n系列: 六欲天\n描述: |\n  你已能初步掌控自己的痛觉神经，能主动将某种程度的剧痛，在神识层面调整为针刺般的锐利快感。\n  （道心+50）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 796715,
+      "name": "【天赋】【六欲天】活体炼成【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "活体炼成"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 极品\n消耗点数: 40\n系列: 六欲天\n描述: |\n  你对自己的身体拥有了更高的掌控权。你能耗费“欲力”，在无需外物的情况下，对自己进行小范围的血肉改造，如在手臂上催生骨刃，或在背后长出肉翅。\n  （道心+70, 法力+30）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 3494,
+      "name": "【天赋】【六欲天】血亲敕令【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "血亲敕令"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 极品\n消耗点数: 40\n系列: 六欲天\n描述: |\n  你对直系血亲拥有了一种近乎法则的命令权。你的话语能轻易扭曲他们的认知，让他们心甘情愿地执行你那些违背人伦的指令。\n  （神海+80, 气运+20）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 173196,
+      "name": "【天赋】【六欲天】万兽淫主【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "万兽淫主"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 极品\n消耗点数: 40\n系列: 六欲天\n描述: |\n  你被所有非开智的妖兽视为天生的交配对象与族群领袖。它们不会主动攻击你，甚至会在你的性威压下匍匐，任你施为。\n  （法力+50, 空速+50）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 991893,
+      "name": "【天赋】【六欲天】欲望虹吸【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "欲望虹吸"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 极品\n消耗点数: 40\n系列: 六欲天\n描述: |\n  只要你身处三人以上的性爱场景中，就能自动将他人泄露的精气与欲望念力吸纳为己用，快速补充自身法力。\n  （法力+100）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 166812,
+      "name": "【天赋】【六欲天】食子归元【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "食子归元"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 极品\n消耗点数: 40\n系列: 六欲天\n描述: |\n  【被动】当你通过任何手段导致一个胎儿（无论是否为你的）死亡并吸收其生命精华时，你的四维会获得额外提升。此行为极度残忍，有伤天和。\n  （道心+100）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 695664,
+      "name": "【天赋】【六欲天】苦乐逆界【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "苦乐逆界"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 天品\n消耗点数: 60\n系列: 六欲天\n描述: |\n  能够展开一个持续十分钟的领域。领域之内，所有生灵的痛觉与快感将被强制反转。断骨之痛将化为无上狂喜，而温柔的爱抚则带来刮骨般的煎熬。每天只能释放一次。\n  （神海+150, 道心+50）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 695575,
+      "name": "【天赋】【六欲天】无垢受胎【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "无垢受胎"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 天品\n消耗点数: 60\n系列: 六欲天\n描述: |\n  你获得了不经交合而受孕的能力。你能隔空捕捉强者的气息、一滴血、甚至是一道剑意，将其作为“种子”纳入子宫，孕育出匪夷所思的道胎。\n  （道心+100, 法力+100）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 577479,
+      "name": "【天赋】【六欲天】业力化身【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "业力化身"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 天品\n消耗点数: 60\n系列: 六欲天\n描述: |\n  你的存在本身就是对人伦秩序的腐蚀。长期与你相处，会让周围的亲族、师徒、道侣关系产生裂痕，滋生出背叛与乱伦的温床，而你则能从中汲取力量。\n  （神海+100, 气运+100）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 232924,
+      "name": "【天赋】【六欲天】极乐盛宴【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "极乐盛宴"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 天品\n消耗点数: 60\n系列: 六欲天\n描述: |\n  当你作为一场大型淫乱派对的核心时，你可以引导所有参与者同时达到高潮。这一瞬间爆发出的庞大欲望洪流，将能瞬间治愈你的所有伤势，并让你在接下来的一小时内所有功法威力翻倍。\n  （法力+200）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 421485,
+      "name": "【天赋】【六欲天】不朽乐园【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "不朽乐园"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 100
+      },
+      "content": "品阶: 天品\n消耗点数: 60\n系列: 六欲天\n描述: |\n  你的肉体不再遵循常规的生命逻辑。被斩断的肢体不会坏死，反而能在断口处长出新的肉芽与神经，你甚至可以将其重新接在身体的其他部位。你将每一次肢解都视为一场探索身体可能性的狂欢。\n  （道心+200）\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 240347,
+      "name": "【背景】【六欲天】残缺的玩偶【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "残缺的玩偶"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 200
+      },
+      "content": "品阶: 中品\n系列: 六欲天\n描述: 你曾在幼年时被拐走，被一群怪人当做实验材料。他们在你的脊椎上植入了一块冰冷的金属，虽然你最终逃脱，但这块金属时常会在你情绪激动时传来混杂着剧痛与异样快感的电流。（道心+20, 空速-10）\n初始资源:\n  - 下品灵石 x100\n  - 《残缺锻体术》x1 (练气期功法)\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 548966,
+      "name": "【背景】【六欲天】名门之荫【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "名门之荫"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 200
+      },
+      "content": "品阶: 上品\n系列: 六欲天\n描述: 你出身于一个古老的修仙世家，家风严谨，人人敬仰。但你偶尔会发现，家族的长辈们看你的眼神中，除了关爱，还夹杂着一种你无法理解的、炽热而扭曲的占有欲。你的血脉似乎比你想象的更加“高贵”也更加“污秽”。（法力+50, 气运+20）\n初始资源:\n  - 中品灵石 x50\n  - 家传玉佩 x1 (练气饰品)\n  - 《浩然正气诀》x1 (练气期功法)\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 807644,
+      "name": "【背景】【六欲天】刑架上的幸存者【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "刑架上的幸存者"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 200
+      },
+      "content": "品阶: 上品\n系列: 六欲天\n描述: 你曾被邪修掳走，在地牢里经受了长达一年的折磨。就在邪修以为你即将崩溃时，你却在极致的痛苦中窥见了一丝力量的真谛，你的精神非但没有被摧毁，反而变得如百炼精钢般坚韧。你发现，痛苦是你最好的老师。（道心+50，神海+20）\n初始资源:\n  - 下品灵石 x50\n  - 《忍神经》x1 (练气期功法, 增加对痛苦的抗性)\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 982343,
+      "name": "【背景】【六欲天】百兽之友【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "百兽之友"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 200
+      },
+      "content": "品阶: 极品\n系列: 六欲天\n描述: 你自幼被遗弃在万兽山脉，由一头年迈的灵狼抚养长大。你听得懂兽语，妖兽们都视你为同类，甚至发情的妖王也会在你面前收敛狂性，小心翼翼地向你示好。你对野性的力量有着天生的亲和力。（空速+80, 道心+50）\n初始资源:\n  - 兽王獠牙匕首 x1 (练气武器)\n  - 《兽语通晓》 (被动天赋)\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    },
+    {
+      "uid": 650680,
+      "name": "【背景】【六欲天】孽缘双生【白小咕】",
+      "enabled": false,
+      "strategy": {
+        "type": "selective",
+        "keys": [
+          "孽缘双生"
+        ],
+        "keys_secondary": {
+          "logic": "and_any",
+          "keys": []
+        },
+        "scan_depth": "same_as_global"
+      },
+      "position": {
+        "type": "before_character_definition",
+        "role": "system",
+        "depth": 4,
+        "order": 200
+      },
+      "content": "品阶: 上品\n系列: 六欲天\n描述: |\n  你有一位双胞胎姐姐，从出生的那一刻起，你们的命运就被扭曲地编织在了一起。你们的家族是个凡间的世家大族，在光鲜亮丽的背后，是种种有违人伦的关系。\n  （初始神海+15，道心+10）\n初始资源:\n  - 同心锁 (饰品)\n",
+      "probability": 100,
+      "recursion": {
+        "prevent_incoming": false,
+        "prevent_outgoing": false,
+        "delay_until": null
+      },
+      "effect": {
+        "sticky": null,
+        "cooldown": null,
+        "delay": null
+      },
+      "addMemo": true,
+      "matchPersonaDescription": false,
+      "matchCharacterDescription": false,
+      "matchCharacterPersonality": false,
+      "matchCharacterDepthPrompt": false,
+      "matchScenario": false,
+      "matchCreatorNotes": false,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": ""
+    }
+  ]
+}
